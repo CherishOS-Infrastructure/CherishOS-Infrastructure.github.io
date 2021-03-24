@@ -12,6 +12,7 @@
 
     <link rel="stylesheet" href="./assets/css/footer.css">
     <link rel="stylesheet" href="./assets/css/team.css">
+    <link rel="stylesheet" href="./assets/css/back-to-top.css">
 
     <style>
         html {
@@ -35,7 +36,7 @@
               </svg>CherishOS</div>
          <nav>
              <ul>
-                 <li><a href="#screenshots">Screenshots</a></li>
+                 <li><a href="#screenshot">Screenshots</a></li>
                  <li><a href="#features">Features</a></li>
                  <li><a href="./blog.html">Blog</a></li>
                  <li><a href="#team">Team</a></li>
@@ -58,6 +59,26 @@
             </div>
         </div>
      </div>
+
+     <!--Screenshots-->
+     <div id="screenshot">
+        <div class="heading">
+            <p>Screenshots</p>
+        </div>
+    	<div class="contain">
+    		<div class="form">
+    			<div class="content">
+    				<ul>
+    					<li><img src="./assets/img/screenshots/1.png" alt=""></li>
+    					<li><img src="./assets/img/screenshots/2.png" alt=""></li>
+    					<li><img src="./assets/img/screenshots/3.png" alt=""></li>
+    					<li><img src="./assets/img/screenshots/4.png" alt=""></li>
+    					<li><img src="./assets/img/screenshots/5.png" alt=""></li>
+    				</ul>
+    			</div>
+    		</div>
+    	</div>
+    </div>
     
 
     <!-- Features -->
@@ -212,6 +233,29 @@
             </div>
         </div>
    </footer>
-   <script src="assets/js/back_to_top.js"></script>
+  
+   <img onclick="topFunction()" id="back-to-top" src="assets/img/arrow.png" style="display: block; width: 50px;">
+  
+  <script>
+  //Get the button
+  var mybutton = document.getElementById("back-to-top");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
     </body>
 </html>

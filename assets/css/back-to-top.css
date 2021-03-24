@@ -1,0 +1,19 @@
+#back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background: #FF7B89;
+    cursor: pointer;
+    border-radius: 24px;
+  }
+
+#back-to-top:hover{
+    background-color: white;
+    color: #FF7B89;
+}
+  

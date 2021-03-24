@@ -65,14 +65,12 @@ h2{
     transition:all 0.3s ease-in-out;
 }
 
+#filter-list li.active,
 #filter-list li:hover{
     background-color: #53bff0;
     color:#fff;
 }
 
-#filter-list  li a:hover{
-    color:#fff;
-}
 
 #downloads .container1{
     position: relative;
@@ -104,6 +102,10 @@ h2{
     height: 100%;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
 
+}
+
+#downloads .container1 .box:hover{
+    transform: translateY(-10px);
 }
 
 #downloads .container1 .box .device-item img{
