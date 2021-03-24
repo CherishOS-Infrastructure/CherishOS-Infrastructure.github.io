@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+body{
+    background: #f8faff;
+    font-size: 16px;
+    position: relative;
+    overflow-x:hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+.row1{
+    padding-top: 20px;
+}
+h2{
+    font-weight:500;
+    font-size:30px;
+    margin: 0 0 20px;
+    text-align: center;
+}
+
+.nav{
+    padding: 30px 0px 0px 0px;
+    text-align: center;
+}
+
+.nav ul{
+    margin: 0;
+    text-align: center;
+}
+
+.nav ul li{
+    list-style: none;
+    padding: 6px;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color:rgb(68, 61, 61);
+}
+
+#filter-list{
+    justify-content: space-between;
+    display: inline-flex;
+    border:1px solid #dddddddd;
+    border-radius: 30px;
+    padding: 4px;
+    margin: 0 0 60px;
+}
+
+#filter-list li{
+    display: inline-flex;
+    font-size: 16px;
+    color:#88888888;
+    line-height: 50px;
+    border-radius: 25px;
+    font-weight: 500;
+    text-align: center;
+    padding: 0 20px;
+    min-width: 130px;
+    cursor: pointer;
+    -webkit-transition:all 0.3s ease-in-out;
+    -ms-transition:all 0.3s ease-in-out;
+    -moz-transition:all 0.3s ease-in-out;
+    transition:all 0.3s ease-in-out;
+}
+
+#filter-list li:hover{
+    background-color: #53bff0;
+    color:#fff;
+}
+
+#filter-list  li a:hover{
+    color:#fff;
+}
+
+#downloads .container1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    flex-wrap: wrap;
+}
+
+#downloads .container1 .box{
+    position: relative;
+    width: 350px;
+    height: 180px;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 30px;
+    transition: 0.5s;
+}
+
+#downloads .container1 .box::before{
+    content: " ";
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    border-radius: 10px;
+    height: 100%;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+
+}
+
+#downloads .container1 .box .device-item img{
+    object-fit: contain;
+    flex-basis: 35%;
+    height: 6rem;
+    margin: 0 auto .75rem; 
+}
+
+#downloads .container1 .box .device-data{
+    flex-basis: 65%;
+}
+
+#downloads .container1 .box .device-data h3{
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.25;
+    margin-left: 20px;
+    color: black;
+}
+
+#downloads .container1 .box .device-data h4{
+    color:black;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.25;
+    margin-left: 20px;
+}
+
+
