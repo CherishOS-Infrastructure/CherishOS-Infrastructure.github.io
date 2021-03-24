@@ -71,6 +71,12 @@ h2{
     color:#fff;
 }
 
+#filter-list li.active a,
+#filter-list li:hover{
+    background-color: #53bff0;
+    color:#fff;
+}
+
 
 #downloads .container1{
     position: relative;

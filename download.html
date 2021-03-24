@@ -30,12 +30,19 @@
                 </div>
                 <div class="nav">
                     <ul id="filter-list">
-                            <li><a href="./asus.html">Asus</a></li>
-                            <li><a href="./lenovo.html">Lenovo</a></li>
-                            <li><a href="#screenshots">OnePlus</a></li>
-                            <li><a href="./realme.html">Realme</a></li>
-                            <li><a class="active" href="./xiaomi.html">Xiaomi</a></li>
+                            <li><a href="#">Asus</a></li>
+                            <li><a href="#">Lenovo</a></li>
+                            <li><a href="#">OnePlus</a></li>
+                            <li><a href="#">Realme</a></li>
+                            <li class="active"><a href="#">Xiaomi</a></li>
                     </ul>
+                    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+                    <script type="text/javascript">
+                    $(document).on('click','ul li',function(){
+                        $(this).addClass('active').siblings().removeClass('active')
+                    })
+                    </script>
+                
                 </div>
             </div>
 
