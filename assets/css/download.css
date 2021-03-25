@@ -82,7 +82,6 @@ h2{
     position: relative;
     display: flex;
     justify-content: center;
-    padding: 20px 0;
     flex-wrap: wrap;
 }
 
@@ -139,6 +138,41 @@ h2{
     font-size: 1rem;
     line-height: 1.25;
     margin-left: 20px;
+}
+
+#asusdev
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#lenovodev
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#oneplusdev
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#realmedev
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#xiaomidev
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 
