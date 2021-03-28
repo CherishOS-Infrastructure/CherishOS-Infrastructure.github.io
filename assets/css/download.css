@@ -147,6 +147,11 @@ h2{
     justify-content: center;
 }
 
+#asusdev a
+{
+    text-decoration: none;
+}
+
 #lenovodev
 {
     display: flex;

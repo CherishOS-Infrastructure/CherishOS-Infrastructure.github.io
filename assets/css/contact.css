@@ -29,7 +29,7 @@ section::before{
 section .container{
     position:relative;
     min-height: 550px;
-    min-width: 1100px;
+    width: 100%;
     display: flex;
     z-index: 1000;
 }
@@ -120,11 +120,11 @@ section .container .contactForm {
     position: absolute;
     padding: 70px 50px;
     background: #fff;
-    margin-left: 150px;
-    padding-left: 250px;
+    margin-left: 89px;
+    padding-left: 274px;
     width: calc(100% - 150px);
     height: 100%;
-    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 50px 50px rgb(0 0 0 / 50%);
 }
 
 section .container .contactForm h2{
