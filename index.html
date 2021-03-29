@@ -9,11 +9,17 @@
 
      <!-- Open Sans -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg=="
+        crossorigin="anonymous" />
 
     <link rel="stylesheet" href="./assets/css/footer.css">
     <link rel="stylesheet" href="./assets/css/team.css">
     <link rel="stylesheet" href="./assets/css/back-to-top.css">
 
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="assets/css/swiper.min.css" />
+   
     <style>
         html {
             scroll-behavior: smooth;
@@ -59,26 +65,56 @@
             </div>
         </div>
      </div>
-
-     <!--Screenshots-->
-     <div id="screenshot">
-        <div class="heading">
-            <p>Screenshots</p>
+      <!-- Screenshots -->
+    <section class="scroll-margin" id="screenshots">
+        <div class="swiper-container">
+            <h1 class="section-title text-center" style="font-weight: bold;color: white;font-family: 'Open Sans',sans-serif;padding-bottom: 30px;">Screenshots</h1>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="img-box">
+                        <img src="./assets/img/screenshots/3.png" alt="" />
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="img-box">
+                        <img src="./assets/img/screenshots/7.png" alt="" />
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="img-box">
+                        <img src="./assets/img/screenshots/6.png" alt="" />
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="img-box">
+                        <img src="./assets/img/screenshots/5.png" alt="" />
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="img-box">
+                        <img src="./assets/img/screenshots/4.png" alt="" />
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="img-box">
+                        <img src="./assets/img/screenshots/1.png" alt="" />
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="img-box">
+                        <img src="./assets/img/screenshots/2.png" alt="" />
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="img-box">
+                        <img src="./assets/img/screenshots/3.png" alt="" />
+                    </div>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
         </div>
-    	<div class="contain">
-    		<div class="form">
-    			<div class="content">
-    				<ul>
-    					<li><img src="./assets/img/screenshots/1.png" alt=""></li>
-    					<li><img src="./assets/img/screenshots/2.png" alt=""></li>
-    					<li><img src="./assets/img/screenshots/3.png" alt=""></li>
-    					<li><img src="./assets/img/screenshots/4.png" alt=""></li>
-    					<li><img src="./assets/img/screenshots/5.png" alt=""></li>
-    				</ul>
-    			</div>
-    		</div>
-    	</div>
-    </div>
+    </section>
     
 
     <!-- Features -->
@@ -263,5 +299,9 @@
     document.documentElement.scrollTop = 0;
   }
   </script>
+
+  <!-- Swiper -->
+  <script src="./assets/js/swiper.min.js"></script>
+  <script src="./assets/js/swiper_init.js"></script>
     </body>
 </html>
