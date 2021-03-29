@@ -5,7 +5,7 @@
 }
 
 .head{
-    background:linear-gradient(#5B74DC,#FF7B89);
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8f99e6, #8399eb, #7399f0, #698df6, #657ffa, #6670fb, #6d5ffb);
 }
 
 .team .row{
@@ -539,7 +539,6 @@ section .swiper-slide .img-box img {
     top: 0;
     z-index: 10;
     padding: 0;
-    background: #5B74DC;
 }
 
 .navbar-brand img {
@@ -555,7 +554,6 @@ section .swiper-slide .img-box img {
 @media only screen and (max-width: 991px) {
     .navbar-nav .active:hover {
         background: white;
-        color: #5B74DC !important;
         padding: 9px 15px;
         border-radius: 28px;
         -webkit-border-radius: 4px;
