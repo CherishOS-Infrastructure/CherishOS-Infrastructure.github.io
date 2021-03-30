@@ -100,41 +100,81 @@ html {
 #features .container .box .content p{
     text-align: center;
 }
-/*Vlogs */
-
-.vlog .containe .navbar .logo{
-    font-size: 30px;
-    color:#555555;
-    font-weight: bold;
-    font-family: 'Open Sans',sans-serif;
-}
-
-.vlog .containe .navbar nav ul li a{
-    text-decoration: none;
-    color:#555555;
-    font-weight: bold;
-    font-family: 'Open Sans',sans-serif;
-}
-
-
-
-.content-vlog {
-  /* background: green; */
-  width:100%;
-  height: 100%;
-}
-
-
-.blog .containe {
+/*News */
+.news #nav-bar {
     background:linear-gradient(#5B74DC,#FF7B89);
-  }
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 10;
+    padding: 0;
+}
+
+.news .navbar-brand img {
+    height: 38px;
+    padding-bottom: 4px;
+    margin-right: 10px;
+}
+
+.news .navbar-nav .active:hover {
+    color: #FF7B89!important;
+}
+
+@media only screen and (max-width: 991px) {
+    .news .navbar-nav .active:hover {
+        background: white;
+        padding: 9px 15px;
+        border-radius: 28px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+    }
+}
+
+.news #nav-bar i {
+    color: #5B74DC;
+    font-size: 25px;
+}
+
+.news .fa-bars:before {
+    color: white;
+}
+
+.news .top-section .navbar-brand {
+    font-weight: 700;
+    font-size: 30px;
+    color: white;
+    padding-left: 0px;
+}
+
+.news .navbar-nav li {
+    padding: 0 20px;
+}
+
+.news .navbar-nav li a {
+    color: white !important;
+    font-weight: 600;
+}
+
+.news .dropdown-item:hover {
+    background: white;
+    color:#FF7B89 !important;
+}
+
+.news .top-section button {
+    font-size: 25px;
+}
+
+.news .main-title {
+    font-size: 60px;
+    margin-top: 160px;
+    font-weight: 700;
+    color: white;
+}
 
 .content-vlog .content-x .card-heading{
     width: 100%;
     height:100px;
     padding: 2.125rem 0 !important;
     margin-bottom: 5rem;
-    margin-left: 15px;
 }
 
 .content-vlog .content-x .card-heading .container{
@@ -225,8 +265,7 @@ html {
 
 .content-vlog .content-x .content .card .card-text{
     margin: 0;
-    height:24px;
-    width: 624px;
+    min-height:24px;
     font-family: 'Open Sans',sans-serif;
     color:#3C4858;
 }
@@ -266,7 +305,7 @@ svg:not(:root) {
     padding-right: 30px;
 }
 
-.content-right .card .card-body{
+.content-right .card-body{
         border: 0;
         border-radius: 6px;
         box-shadow: 0 2px 5px 0 rgb(0 0 0 / 26%);
@@ -277,7 +316,7 @@ svg:not(:root) {
         border-radius: 6px;
 }
 
-.content-right .card .card-body p{
+.content-right .card1 .card-body p{
     color: #3C4858;
     text-decoration: none;
     font-family: 'Open Sans',sans-serif;
@@ -286,26 +325,14 @@ svg:not(:root) {
     padding-top:10px;
 }
 
-.content-right .card .card-body .card-title{
+.content-right .card1 .card-body .card-title{
     color: #3C4858;
     margin: 8px;
 }
 
-.content-right .card .card-body .card-title a {
+.content-right .card1 .card-body .card-title a {
     color:#FF7B89;
     margin: 8px;
-}
-
-.content-right .card {
-    border: 0;
-    border-radius: 6px;
-    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 26%);
-    margin-bottom: 24px;
-    background-color: white;
-    line-height: 1.5em;
-    border: 0;
-    border-radius: 6px;
-    margin-right: 15px;
 }
 
 .content-changelog .content-x .card-heading{
@@ -456,7 +483,7 @@ svg:not(:root) {
     margin: 8px;
 }
 
-.content-right1 .card {
+.content-right1 .card1 {
     border: 0;
     border-radius: 6px;
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 26%);
