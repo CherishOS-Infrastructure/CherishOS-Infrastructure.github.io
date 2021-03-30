@@ -41,7 +41,7 @@ h2{
 
 #filter-list{
     justify-content: space-between;
-    display: inline-flex;
+    display: inline-block;
     border:1px solid #dddddddd;
     border-radius: 30px;
     padding: 4px;
@@ -49,7 +49,7 @@ h2{
 }
 
 #filter-list li{
-    display: inline-flex;
+    display: inline-block;
     font-size: 16px;
     color:#88888888;
     line-height: 50px;
