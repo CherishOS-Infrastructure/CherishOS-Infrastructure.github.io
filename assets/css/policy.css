@@ -4,55 +4,77 @@
     box-sizing: border-box;
 }
 
-.header{
-    background:linear-gradient(#5B74DC,#f57d89);
+/* New navbar*/
+
+.head{
+    background: linear-gradient(#5B74DC,#f57d89);
+}
+#nav-bar {
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 10;
+    padding: 0;
 }
 
-.navbar{
-    display:flex;
-    align-items: center;
-    padding: 20px;
+.navbar-brand img {
+    height: 38px;
+    padding-bottom: 4px;
+    margin-right: 10px;
 }
 
-.logo{
+.navbar-nav .active:hover {
+    color: #FF7B89!important;
+}
+
+@media only screen and (max-width: 991px) {
+    .navbar-nav .active:hover {
+        background: white;
+        padding: 9px 15px;
+        border-radius: 28px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+    }
+}
+
+#nav-bar i {
+    color: #5B74DC;
+    font-size: 25px;
+}
+
+.fa-bars:before {
+    color: white;
+}
+
+.top-section .navbar-brand {
+    font-weight: 700;
     font-size: 30px;
-    color:white;
-    font-weight: bold;
-    font-family: 'Open Sans',sans-serif;
+    color: white;
+    padding-left: 0px;
 }
 
-nav{
-    flex:1;
-    text-align: right;
+.navbar-nav li {
+    padding: 0 20px;
 }
 
-nav ul{
-    display: inline-block;
-    list-style: none;
+.navbar-nav li a {
+    color: white !important;
+    font-weight: 600;
 }
 
-nav ul li{
-    display: inline-block;
-    margin-right: 20px;
+.dropdown-item:hover {
+    background: white;
+    color:#FF7B89 !important;
 }
 
-nav ul li a{
-    text-decoration: none;
-    color:white;
-    font-weight: bold;
-    font-family: 'Open Sans',sans-serif;
+.top-section button {
+    font-size: 25px;
 }
 
-
-nav ul li a:hover{
-    color:#FF7B89;
-}
-
-.container{
-    max-width: 1300px;
-    margin: auto;
-    padding-left: 25px;
-    padding-right: 25px;
+.main-title {
+    font-size: 60px;
+    margin-top: 160px;
+    font-weight: 700;
+    color: white;
 }
 
 .legal-title {
