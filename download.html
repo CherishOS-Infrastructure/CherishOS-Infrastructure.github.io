@@ -14,6 +14,11 @@
 
         <link rel="stylesheet" href="./assets/css/back-to-top.css">
 
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+     <!--fontawseom-->
+     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
         <!--Font awesome-->
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
@@ -24,732 +29,800 @@
         </style>
     </head>
     <body>
-        <div class="download">
-            <div class="container1">
+        <div class="wrapper">
                 <div class="row1">
                     <div class="text-center">
                         <h2><span>Downloads</span></h2>
                     </div>
                 </div>
-                <div class="nav">
-                    <ul id="filter-list">
-                            <li id="btnAsus"><a>Asus</a></li>
-                            <li id="btnLenovo"><a>Lenovo</a></li>
-                            <li id="btnOneplus"><a>OnePlus</a></li>
-                            <li id="btnRealme"><a>Realme</a></li>
-                            <li id="btnXiaomi" class="active"><a>Xiaomi</a></li>
-                    </ul>
-                    <!--
-                            <input type="button" id="btnAsus" value="Asus"/>                            
-                            <input type="button" id="btnLenovo" value="Lenovo"/>
-                            <input type="button" id="btnOneplus" value="OnePlus"/>
-                            <input type="button" id="btnRealme" value="Realme"/>
-                            <input type="button" id="btnXiaomi" value="Xiaomi"/>
-                    -->
-                            
-                    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-                    <script type="text/javascript">
-                    $(document).on('click','ul li',function(){
-                        $(this).addClass('active').siblings().removeClass('active')
-                    })
-                    </script>
-                
-                </div>
-            </div>
-
-    <!-- Center devices -->
-    <div id="downloads">
-         <div class="container1" id ="list">
-
-        <!--Asus-->
-            <div id = "asusdev">
-
-                <a href="./info.html" target="_bank"><div class="box">
-                    <div class="device-item">
-                        <img src="assets/img/devices/X00P.jpg">
-                    </div>
-                    <!--Content device-->
-                    <div class="device-data">
-                        <h3 class="devicename">Asus Zenfone Max M1 (X00P)</h3>
-                        <h4 class="update"><svg viewBox="0 0 24 24" style="
-                            margin-right: 0.125rem;
-                            height: 1.15rem;
-                            vertical-align: top;
-                            display: inline-block;" xmlns="http://www.w3.org/2000/svg"><title/><path d="M21.91,4.09a1,1,0,0,0-1.07.16L19.48,5.46A9.81,9.81,0,0,0,12,2a10,10,0,1,0,9.42,13.33,1,1,0,0,0-1.89-.66A8,8,0,1,1,12,4a7.86,7.86,0,0,1,6,2.78L16.34,8.25a1,1,0,0,0-.27,1.11A1,1,0,0,0,17,10h4.5a1,1,0,0,0,1-1V5A1,1,0,0,0,21.91,4.09Z" fill="#464646"/></svg>
-                            Build Date:2020-27-11</h4>
-                        <h4 class="version">
-                            <svg viewBox="0 0 32 32" style="
-                            margin-right: 0.125rem;
-                            height: 1.15rem;
-                            vertical-align: top;
-                            display: inline-block;" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#101820;}</style></defs><title/><g data-name="Layer 4" id="Layer_4"><path class="cls-1" d="M16,31A15,15,0,1,1,31,16,15,15,0,0,1,16,31ZM16,3A13,13,0,1,0,29,16,13,13,0,0,0,16,3Z"/><rect class="cls-1" height="9" width="2" x="15" y="14"/><path class="cls-1" d="M16,12a2,2,0,1,1,2-2A2,2,0,0,1,16,12Zm0-2Z"/></g></svg>
-                            Version:2.1</h4>
-                    </div>
-                </div></a>
-    
+            <!-- filter Items -->
+            <nav>
+              <div class="items">
+                <span class="item active" data-name="all">All</span>
+                <span class="item" data-name="asus">Asus</span>
+                <span class="item" data-name="lenovo">Lenovo</span>
+                <span class="item" data-name="oneplus">OnePlus</span>
+                <span class="item" data-name="realme">Realme</span>
+                <span class="item" data-name="xiaomi">Xiaomi</span>
+              </div>
+            </nav>
+            <!-- filter devices -->
+            <div class="download">
+                <!--Asus-->
+              <div class="device" data-name="asus"><span>
+                <a href="https://www.pling.com/p/1452076/" target="_blank" style="text-decoration: none;">
+                    <div class="box">
+                        <div class="device-item">
+                            <img src="assets/img/devices/X00P.jpg">
+                        </div>
+                        <!--Content device-->
+                        <div class="device-data">
+                            <h3 class="devicename">Asus Zenfone Max M1 (X00P)</h3>
+                            <h4 class="update"><svg viewBox="0 0 24 24" style="
+                                margin-right: 0.125rem;
+                                height: 1.15rem;
+                                vertical-align: top;
+                                display: inline-block;" xmlns="http://www.w3.org/2000/svg"><title/><path d="M21.91,4.09a1,1,0,0,0-1.07.16L19.48,5.46A9.81,9.81,0,0,0,12,2a10,10,0,1,0,9.42,13.33,1,1,0,0,0-1.89-.66A8,8,0,1,1,12,4a7.86,7.86,0,0,1,6,2.78L16.34,8.25a1,1,0,0,0-.27,1.11A1,1,0,0,0,17,10h4.5a1,1,0,0,0,1-1V5A1,1,0,0,0,21.91,4.09Z" fill="#464646"/></svg>
+                                Build Date:2020-27-11</h4>
+                            <h4 class="version">
+                                <svg viewBox="0 0 32 32" style="
+                                margin-right: 0.125rem;
+                                height: 1.15rem;
+                                vertical-align: top;
+                                display: inline-block;" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#101820;}</style></defs><title/><g data-name="Layer 4" id="Layer_4"><path class="cls-1" d="M16,31A15,15,0,1,1,31,16,15,15,0,0,1,16,31ZM16,3A13,13,0,1,0,29,16,13,13,0,0,0,16,3Z"/><rect class="cls-1" height="9" width="2" x="15" y="14"/><path class="cls-1" d="M16,12a2,2,0,1,1,2-2A2,2,0,0,1,16,12Zm0-2Z"/></g></svg>
+                                Version:2.1</h4>
+                        </div>
+                    </div></a>
+              </span></div>
+        
+              <div class="device" data-name="asus"><span>
+                <a href="https://www.pling.com/p/1451936/" target="_blank" style="text-decoration: none;">
                 <div class="box">
-                    <div class="device-item">
-                        <img src="assets/img/devices/X00TD.jpg">
-                    </div>
-                    <!--Content device-->
-                    <div class="device-data">
-                        <h3 class="devicename">Asus Zenfone Max Pro M1(X00TD)</h3>
-                        <h4 class="update"><svg viewBox="0 0 24 24" style="
-                            margin-right: 0.125rem;
-                            height: 1.15rem;
-                            vertical-align: top;
-                            display: inline-block;" xmlns="http://www.w3.org/2000/svg"><title/><path d="M21.91,4.09a1,1,0,0,0-1.07.16L19.48,5.46A9.81,9.81,0,0,0,12,2a10,10,0,1,0,9.42,13.33,1,1,0,0,0-1.89-.66A8,8,0,1,1,12,4a7.86,7.86,0,0,1,6,2.78L16.34,8.25a1,1,0,0,0-.27,1.11A1,1,0,0,0,17,10h4.5a1,1,0,0,0,1-1V5A1,1,0,0,0,21.91,4.09Z" fill="#464646"/></svg>
-                            Build Date:2021-01-03</h4>
-                        <h4 class="version">
-                            <svg viewBox="0 0 32 32" style="
-                            margin-right: 0.125rem;
-                            height: 1.15rem;
-                            vertical-align: top;
-                            display: inline-block;" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#101820;}</style></defs><title/><g data-name="Layer 4" id="Layer_4"><path class="cls-1" d="M16,31A15,15,0,1,1,31,16,15,15,0,0,1,16,31ZM16,3A13,13,0,1,0,29,16,13,13,0,0,0,16,3Z"/><rect class="cls-1" height="9" width="2" x="15" y="14"/><path class="cls-1" d="M16,12a2,2,0,1,1,2-2A2,2,0,0,1,16,12Zm0-2Z"/></g></svg>
-                            Version:2.3.5</h4>
-                    </div>
-                </div>
-    
-                <div class="box">
-                    <div class="device-item">
-                        <img src="assets/img/devices/X01BD.png">
-                    </div>
-                    <!--Content device-->
-                    <div class="device-data">
-                        <h3 class="devicename">Asus Zenfone Max Pro M2(X01BD)</h3>
-                        <h4 class="update"><svg viewBox="0 0 24 24" style="
-                            margin-right: 0.125rem;
-                            height: 1.15rem;
-                            vertical-align: top;
-                            display: inline-block;" xmlns="http://www.w3.org/2000/svg"><title/><path d="M21.91,4.09a1,1,0,0,0-1.07.16L19.48,5.46A9.81,9.81,0,0,0,12,2a10,10,0,1,0,9.42,13.33,1,1,0,0,0-1.89-.66A8,8,0,1,1,12,4a7.86,7.86,0,0,1,6,2.78L16.34,8.25a1,1,0,0,0-.27,1.11A1,1,0,0,0,17,10h4.5a1,1,0,0,0,1-1V5A1,1,0,0,0,21.91,4.09Z" fill="#464646"/></svg>
-                            Build Date:2020-12-03</h4>
-                        <h4 class="version">
-                            <svg viewBox="0 0 32 32" style="
-                            margin-right: 0.125rem;
-                            height: 1.15rem;
-                            vertical-align: top;
-                            display: inline-block;" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#101820;}</style></defs><title/><g data-name="Layer 4" id="Layer_4"><path class="cls-1" d="M16,31A15,15,0,1,1,31,16,15,15,0,0,1,16,31ZM16,3A13,13,0,1,0,29,16,13,13,0,0,0,16,3Z"/><rect class="cls-1" height="9" width="2" x="15" y="14"/><path class="cls-1" d="M16,12a2,2,0,1,1,2-2A2,2,0,0,1,16,12Zm0-2Z"/></g></svg>
-                            Version:2.1</h4>
-                    </div>
-                </div>
-    
-                <div class="box">
-                    <div class="device-item">
-                        <img src="assets/img/devices/Z01R.jpg">
-                    </div>
-                    <!--Content device-->
-                    <div class="device-data">
-                        <h3 class="devicename">Asus zenfone 5Z(Z01R)</h3>
-                        <h4 class="update"><svg viewBox="0 0 24 24" style="
-                            margin-right: 0.125rem;
-                            height: 1.15rem;
-                            vertical-align: top;
-                            display: inline-block;" xmlns="http://www.w3.org/2000/svg"><title/><path d="M21.91,4.09a1,1,0,0,0-1.07.16L19.48,5.46A9.81,9.81,0,0,0,12,2a10,10,0,1,0,9.42,13.33,1,1,0,0,0-1.89-.66A8,8,0,1,1,12,4a7.86,7.86,0,0,1,6,2.78L16.34,8.25a1,1,0,0,0-.27,1.11A1,1,0,0,0,17,10h4.5a1,1,0,0,0,1-1V5A1,1,0,0,0,21.91,4.09Z" fill="#464646"/></svg>
-                            Build Date:2020-12-03</h4>
-                        <h4 class="version">
-                            <svg viewBox="0 0 32 32" style="
-                            margin-right: 0.125rem;
-                            height: 1.15rem;
-                            vertical-align: top;
-                            display: inline-block;" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#101820;}</style></defs><title/><g data-name="Layer 4" id="Layer_4"><path class="cls-1" d="M16,31A15,15,0,1,1,31,16,15,15,0,0,1,16,31ZM16,3A13,13,0,1,0,29,16,13,13,0,0,0,16,3Z"/><rect class="cls-1" height="9" width="2" x="15" y="14"/><path class="cls-1" d="M16,12a2,2,0,1,1,2-2A2,2,0,0,1,16,12Zm0-2Z"/></g></svg>
-                            Version:2.1</h4>
-                    </div>
-                </div>
-            </div>
-                
-        <!--Lenovo-->
-        <div id = "lenovodev">
-            <div class="box">
-                <div class="device-item">
-                    <img src="assets/img/devices/jd2019.jpg">
-                </div>
-                <!--Content device-->
-                <div class="device-data">
-                    <h3 class="devicename">Lenovo Z5s (jd2019)</h3>
-                    <h4 class="update"><svg viewBox="0 0 24 24" style="
-                        margin-right: 0.125rem;
-                        height: 1.15rem;
-                        vertical-align: top;
-                        display: inline-block;" xmlns="http://www.w3.org/2000/svg"><title/><path d="M21.91,4.09a1,1,0,0,0-1.07.16L19.48,5.46A9.81,9.81,0,0,0,12,2a10,10,0,1,0,9.42,13.33,1,1,0,0,0-1.89-.66A8,8,0,1,1,12,4a7.86,7.86,0,0,1,6,2.78L16.34,8.25a1,1,0,0,0-.27,1.11A1,1,0,0,0,17,10h4.5a1,1,0,0,0,1-1V5A1,1,0,0,0,21.91,4.09Z" fill="#464646"/></svg>
-                        Build Date:2021-22-03</h4>
-                    <h4 class="version">
-                        <svg viewBox="0 0 32 32" style="
-                        margin-right: 0.125rem;
-                        height: 1.15rem;
-                        vertical-align: top;
-                        display: inline-block;" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#101820;}</style></defs><title/><g data-name="Layer 4" id="Layer_4"><path class="cls-1" d="M16,31A15,15,0,1,1,31,16,15,15,0,0,1,16,31ZM16,3A13,13,0,1,0,29,16,13,13,0,0,0,16,3Z"/><rect class="cls-1" height="9" width="2" x="15" y="14"/><path class="cls-1" d="M16,12a2,2,0,1,1,2-2A2,2,0,0,1,16,12Zm0-2Z"/></g></svg>
-                        Version:2.3.5</h4>
-                </div>
-            </div>
-        </div>
+                  <div class="device-item">
+                      <img src="assets/img/devices/X00TD.jpg">
+                  </div>
+                  <!--Content device-->
+                  <div class="device-data">
+                      <h3 class="devicename">Asus Zenfone Max Pro M1(X00TD)</h3>
+                      <h4 class="update"><svg viewBox="0 0 24 24" style="
+                          margin-right: 0.125rem;
+                          height: 1.15rem;
+                          vertical-align: top;
+                          display: inline-block;" xmlns="http://www.w3.org/2000/svg"><title/><path d="M21.91,4.09a1,1,0,0,0-1.07.16L19.48,5.46A9.81,9.81,0,0,0,12,2a10,10,0,1,0,9.42,13.33,1,1,0,0,0-1.89-.66A8,8,0,1,1,12,4a7.86,7.86,0,0,1,6,2.78L16.34,8.25a1,1,0,0,0-.27,1.11A1,1,0,0,0,17,10h4.5a1,1,0,0,0,1-1V5A1,1,0,0,0,21.91,4.09Z" fill="#464646"/></svg>
+                          Build Date:2021-01-03</h4>
+                      <h4 class="version">
+                          <svg viewBox="0 0 32 32" style="
+                          margin-right: 0.125rem;
+                          height: 1.15rem;
+                          vertical-align: top;
+                          display: inline-block;" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#101820;}</style></defs><title/><g data-name="Layer 4" id="Layer_4"><path class="cls-1" d="M16,31A15,15,0,1,1,31,16,15,15,0,0,1,16,31ZM16,3A13,13,0,1,0,29,16,13,13,0,0,0,16,3Z"/><rect class="cls-1" height="9" width="2" x="15" y="14"/><path class="cls-1" d="M16,12a2,2,0,1,1,2-2A2,2,0,0,1,16,12Zm0-2Z"/></g></svg>
+                          Version:2.3.5</h4>
+                  </div>
+              </div> </a>
+              </span></div>
         
-
-        <!--Oneplus-->
-        <div id = "oneplusdev">
-            <div class="box">
-                <div class="device-item">
-                    <img src="assets/img/devices/enchilada.png">
-                </div>
-                <!--Content device-->
-                <div class="device-data">
-                    <h3 class="devicename">Oneplus 6 (enchilada)</h3>
-                    <h4 class="update"><svg viewBox="0 0 24 24" style="
-                        margin-right: 0.125rem;
-                        height: 1.15rem;
-                        vertical-align: top;
-                        display: inline-block;" xmlns="http://www.w3.org/2000/svg"><title/><path d="M21.91,4.09a1,1,0,0,0-1.07.16L19.48,5.46A9.81,9.81,0,0,0,12,2a10,10,0,1,0,9.42,13.33,1,1,0,0,0-1.89-.66A8,8,0,1,1,12,4a7.86,7.86,0,0,1,6,2.78L16.34,8.25a1,1,0,0,0-.27,1.11A1,1,0,0,0,17,10h4.5a1,1,0,0,0,1-1V5A1,1,0,0,0,21.91,4.09Z" fill="#464646"/></svg>
-                        Build Date:2021-12-03</h4>
-                    <h4 class="version">
-                        <svg viewBox="0 0 32 32" style="
-                        margin-right: 0.125rem;
-                        height: 1.15rem;
-                        vertical-align: top;
-                        display: inline-block;" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#101820;}</style></defs><title/><g data-name="Layer 4" id="Layer_4"><path class="cls-1" d="M16,31A15,15,0,1,1,31,16,15,15,0,0,1,16,31ZM16,3A13,13,0,1,0,29,16,13,13,0,0,0,16,3Z"/><rect class="cls-1" height="9" width="2" x="15" y="14"/><path class="cls-1" d="M16,12a2,2,0,1,1,2-2A2,2,0,0,1,16,12Zm0-2Z"/></g></svg>
-                        Version:2.3.5</h4>
-                </div>
-            </div>
-    
-            <div class="box">
-                <div class="device-item">
-                    <img src="assets/img/devices/fajita.png">
-                </div>
-                <!--Content device-->
-                <div class="device-data">
-                    <h3 class="devicename">Oneplus 6T (fajita)</h3>
-                    <h4 class="update"><svg viewBox="0 0 24 24" style="
-                        margin-right: 0.125rem;
-                        height: 1.15rem;
-                        vertical-align: top;
-                        display: inline-block;" xmlns="http://www.w3.org/2000/svg"><title/><path d="M21.91,4.09a1,1,0,0,0-1.07.16L19.48,5.46A9.81,9.81,0,0,0,12,2a10,10,0,1,0,9.42,13.33,1,1,0,0,0-1.89-.66A8,8,0,1,1,12,4a7.86,7.86,0,0,1,6,2.78L16.34,8.25a1,1,0,0,0-.27,1.11A1,1,0,0,0,17,10h4.5a1,1,0,0,0,1-1V5A1,1,0,0,0,21.91,4.09Z" fill="#464646"/></svg>
-                        Build Date:2021-12-03</h4>
-                    <h4 class="version">
-                        <svg viewBox="0 0 32 32" style="
-                        margin-right: 0.125rem;
-                        height: 1.15rem;
-                        vertical-align: top;
-                        display: inline-block;" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#101820;}</style></defs><title/><g data-name="Layer 4" id="Layer_4"><path class="cls-1" d="M16,31A15,15,0,1,1,31,16,15,15,0,0,1,16,31ZM16,3A13,13,0,1,0,29,16,13,13,0,0,0,16,3Z"/><rect class="cls-1" height="9" width="2" x="15" y="14"/><path class="cls-1" d="M16,12a2,2,0,1,1,2-2A2,2,0,0,1,16,12Zm0-2Z"/></g></svg>
-                        Version:2.3.5</h4>
-                </div>
-            </div>
-        </div>
+              <div class="device" data-name="asus"><span>
+                <a href="https://sourceforge.net/projects/cherish-os/files/device/X01BD/" target="_blank" style="text-decoration: none;">
+                    <div class="box">
+                        <div class="device-item">
+                            <img src="assets/img/devices/X01BD.jpg">
+                        </div>
+                        <!--Content device-->
+                        <div class="device-data">
+                            <h3 class="devicename">Asus Zenfone Max Pro M2(X01BD)</h3>
+                            <h4 class="update"><svg viewBox="0 0 24 24" style="
+                                margin-right: 0.125rem;
+                                height: 1.15rem;
+                                vertical-align: top;
+                                display: inline-block;" xmlns="http://www.w3.org/2000/svg"><title/><path d="M21.91,4.09a1,1,0,0,0-1.07.16L19.48,5.46A9.81,9.81,0,0,0,12,2a10,10,0,1,0,9.42,13.33,1,1,0,0,0-1.89-.66A8,8,0,1,1,12,4a7.86,7.86,0,0,1,6,2.78L16.34,8.25a1,1,0,0,0-.27,1.11A1,1,0,0,0,17,10h4.5a1,1,0,0,0,1-1V5A1,1,0,0,0,21.91,4.09Z" fill="#464646"/></svg>
+                                Build Date:2020-12-03</h4>
+                            <h4 class="version">
+                                <svg viewBox="0 0 32 32" style="
+                                margin-right: 0.125rem;
+                                height: 1.15rem;
+                                vertical-align: top;
+                                display: inline-block;" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#101820;}</style></defs><title/><g data-name="Layer 4" id="Layer_4"><path class="cls-1" d="M16,31A15,15,0,1,1,31,16,15,15,0,0,1,16,31ZM16,3A13,13,0,1,0,29,16,13,13,0,0,0,16,3Z"/><rect class="cls-1" height="9" width="2" x="15" y="14"/><path class="cls-1" d="M16,12a2,2,0,1,1,2-2A2,2,0,0,1,16,12Zm0-2Z"/></g></svg>
+                                Version:2.1</h4>
+                        </div>
+                    </div></a>
+              </span></div>
         
-        <!--Realme-->
-        <div id = "realmedev">
-            <div class="box">
-                <div class="device-item">
-                    <img src="assets/img/devices/RMX1901.jpg">
-                </div>
-                <!--Content device-->
-                <div class="device-data">
-                    <h3 class="devicename">Realme X (RMX1901)</h3>
-                    <h4 class="update"><svg viewBox="0 0 24 24" style="
-                        margin-right: 0.125rem;
-                        height: 1.15rem;
-                        vertical-align: top;
-                        display: inline-block;" xmlns="http://www.w3.org/2000/svg"><title/><path d="M21.91,4.09a1,1,0,0,0-1.07.16L19.48,5.46A9.81,9.81,0,0,0,12,2a10,10,0,1,0,9.42,13.33,1,1,0,0,0-1.89-.66A8,8,0,1,1,12,4a7.86,7.86,0,0,1,6,2.78L16.34,8.25a1,1,0,0,0-.27,1.11A1,1,0,0,0,17,10h4.5a1,1,0,0,0,1-1V5A1,1,0,0,0,21.91,4.09Z" fill="#464646"/></svg>
-                        Build Date:2021-13-01</h4>
-                    <h4 class="version">
-                        <svg viewBox="0 0 32 32" style="
-                        margin-right: 0.125rem;
-                        height: 1.15rem;
-                        vertical-align: top;
-                        display: inline-block;" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#101820;}</style></defs><title/><g data-name="Layer 4" id="Layer_4"><path class="cls-1" d="M16,31A15,15,0,1,1,31,16,15,15,0,0,1,16,31ZM16,3A13,13,0,1,0,29,16,13,13,0,0,0,16,3Z"/><rect class="cls-1" height="9" width="2" x="15" y="14"/><path class="cls-1" d="M16,12a2,2,0,1,1,2-2A2,2,0,0,1,16,12Zm0-2Z"/></g></svg>
-                        Version:2.1.5</h4>
-                </div>
-            </div>
-        </div>
+              <div class="device" data-name="asus"><span>
+                <a href="https://www.pling.com/p/1489768/" target="_blank" style="text-decoration: none;">
+                    <div class="box">
+                        <div class="device-item">
+                            <img src="assets/img/devices/Z01R.jpg">
+                        </div>
+                        <!--Content device-->
+                        <div class="device-data">
+                            <h3 class="devicename">Asus zenfone 5Z(Z01R)</h3>
+                            <h4 class="update"><svg viewBox="0 0 24 24" style="
+                                margin-right: 0.125rem;
+                                height: 1.15rem;
+                                vertical-align: top;
+                                display: inline-block;" xmlns="http://www.w3.org/2000/svg"><title/><path d="M21.91,4.09a1,1,0,0,0-1.07.16L19.48,5.46A9.81,9.81,0,0,0,12,2a10,10,0,1,0,9.42,13.33,1,1,0,0,0-1.89-.66A8,8,0,1,1,12,4a7.86,7.86,0,0,1,6,2.78L16.34,8.25a1,1,0,0,0-.27,1.11A1,1,0,0,0,17,10h4.5a1,1,0,0,0,1-1V5A1,1,0,0,0,21.91,4.09Z" fill="#464646"/></svg>
+                                Build Date:2020-12-03</h4>
+                            <h4 class="version">
+                                <svg viewBox="0 0 32 32" style="
+                                margin-right: 0.125rem;
+                                height: 1.15rem;
+                                vertical-align: top;
+                                display: inline-block;" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#101820;}</style></defs><title/><g data-name="Layer 4" id="Layer_4"><path class="cls-1" d="M16,31A15,15,0,1,1,31,16,15,15,0,0,1,16,31ZM16,3A13,13,0,1,0,29,16,13,13,0,0,0,16,3Z"/><rect class="cls-1" height="9" width="2" x="15" y="14"/><path class="cls-1" d="M16,12a2,2,0,1,1,2-2A2,2,0,0,1,16,12Zm0-2Z"/></g></svg>
+                                Version:2.1</h4>
+                        </div>
+                    </div> </a>
+              </span></div>
+              <!--Asus-->
         
-
-        <!--Xiaomi-->
-        <div id="xiaomidev">
-            <div class="box">
-                <div class="device-item">
-                    <img src="assets/img/devices/dipper.jpg">
-                </div>
-                <!--Content device-->
-                <div class="device-data">
-                    <h3 class="devicename">Mi 8(dipper)</h3>
-                    <h4 class="update"><svg viewBox="0 0 24 24" style="
-                        margin-right: 0.125rem;
-                        height: 1.15rem;
-                        vertical-align: top;
-                        display: inline-block;" xmlns="http://www.w3.org/2000/svg"><title/><path d="M21.91,4.09a1,1,0,0,0-1.07.16L19.48,5.46A9.81,9.81,0,0,0,12,2a10,10,0,1,0,9.42,13.33,1,1,0,0,0-1.89-.66A8,8,0,1,1,12,4a7.86,7.86,0,0,1,6,2.78L16.34,8.25a1,1,0,0,0-.27,1.11A1,1,0,0,0,17,10h4.5a1,1,0,0,0,1-1V5A1,1,0,0,0,21.91,4.09Z" fill="#464646"/></svg>
-                        Build Date:2021-09-03</h4>
-                    <h4 class="version">
-                        <svg viewBox="0 0 32 32" style="
-                        margin-right: 0.125rem;
-                        height: 1.15rem;
-                        vertical-align: top;
-                        display: inline-block;" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#101820;}</style></defs><title/><g data-name="Layer 4" id="Layer_4"><path class="cls-1" d="M16,31A15,15,0,1,1,31,16,15,15,0,0,1,16,31ZM16,3A13,13,0,1,0,29,16,13,13,0,0,0,16,3Z"/><rect class="cls-1" height="9" width="2" x="15" y="14"/><path class="cls-1" d="M16,12a2,2,0,1,1,2-2A2,2,0,0,1,16,12Zm0-2Z"/></g></svg>
-                        Version:2.3</h4>
-                </div>
-            </div>
-    
-            <div class="box">
-                <div class="device-item">
-                    <img src="assets/img/devices/platina.png">
-                </div>
-                <!--Content device-->
-                <div class="device-data">
-                    <h3 class="devicename">Mi 8 Lite(platina)</h3>
-                    <h4 class="update"><svg viewBox="0 0 24 24" style="
-                        margin-right: 0.125rem;
-                        height: 1.15rem;
-                        vertical-align: top;
-                        display: inline-block;" xmlns="http://www.w3.org/2000/svg"><title/><path d="M21.91,4.09a1,1,0,0,0-1.07.16L19.48,5.46A9.81,9.81,0,0,0,12,2a10,10,0,1,0,9.42,13.33,1,1,0,0,0-1.89-.66A8,8,0,1,1,12,4a7.86,7.86,0,0,1,6,2.78L16.34,8.25a1,1,0,0,0-.27,1.11A1,1,0,0,0,17,10h4.5a1,1,0,0,0,1-1V5A1,1,0,0,0,21.91,4.09Z" fill="#464646"/></svg>
-                        Build Date:2021-02-03</h4>
-                    <h4 class="version">
-                        <svg viewBox="0 0 32 32" style="
-                        margin-right: 0.125rem;
-                        height: 1.15rem;
-                        vertical-align: top;
-                        display: inline-block;" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#101820;}</style></defs><title/><g data-name="Layer 4" id="Layer_4"><path class="cls-1" d="M16,31A15,15,0,1,1,31,16,15,15,0,0,1,16,31ZM16,3A13,13,0,1,0,29,16,13,13,0,0,0,16,3Z"/><rect class="cls-1" height="9" width="2" x="15" y="14"/><path class="cls-1" d="M16,12a2,2,0,1,1,2-2A2,2,0,0,1,16,12Zm0-2Z"/></g></svg>
-                        Version:2.2</h4>
-                </div>
-            </div>
-    
-            <div class="box">
-                <div class="device-item">
-                    <img src="assets/img/devices/laurel_sprout.jpg">
-                </div>
-                <!--Content device-->
-                <div class="device-data">
-                    <h3 class="devicename">Mi A3(laurel_sprout)</h3>
-                    <h4 class="update"><svg viewBox="0 0 24 24" style="
-                        margin-right: 0.125rem;
-                        height: 1.15rem;
-                        vertical-align: top;
-                        display: inline-block;" xmlns="http://www.w3.org/2000/svg"><title/><path d="M21.91,4.09a1,1,0,0,0-1.07.16L19.48,5.46A9.81,9.81,0,0,0,12,2a10,10,0,1,0,9.42,13.33,1,1,0,0,0-1.89-.66A8,8,0,1,1,12,4a7.86,7.86,0,0,1,6,2.78L16.34,8.25a1,1,0,0,0-.27,1.11A1,1,0,0,0,17,10h4.5a1,1,0,0,0,1-1V5A1,1,0,0,0,21.91,4.09Z" fill="#464646"/></svg>
-                        Build Date:2021-07-03</h4>
-                    <h4 class="version">
-                        <svg viewBox="0 0 32 32" style="
-                        margin-right: 0.125rem;
-                        height: 1.15rem;
-                        vertical-align: top;
-                        display: inline-block;" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#101820;}</style></defs><title/><g data-name="Layer 4" id="Layer_4"><path class="cls-1" d="M16,31A15,15,0,1,1,31,16,15,15,0,0,1,16,31ZM16,3A13,13,0,1,0,29,16,13,13,0,0,0,16,3Z"/><rect class="cls-1" height="9" width="2" x="15" y="14"/><path class="cls-1" d="M16,12a2,2,0,1,1,2-2A2,2,0,0,1,16,12Zm0-2Z"/></g></svg>
-                        Version:2.3</h4>
-                </div>
-            </div>
-    
-            <div class="box">
-                <div class="device-item">
-                    <img src="assets/img/devices/wayne.jpg">
-                </div>
-                <!--Content device-->
-                <div class="device-data">
-                    <h3 class="devicename">Mi 6X(wayne)</h3>
-                    <h4 class="update"><svg viewBox="0 0 24 24" style="
-                        margin-right: 0.125rem;
-                        height: 1.15rem;
-                        vertical-align: top;
-                        display: inline-block;" xmlns="http://www.w3.org/2000/svg"><title/><path d="M21.91,4.09a1,1,0,0,0-1.07.16L19.48,5.46A9.81,9.81,0,0,0,12,2a10,10,0,1,0,9.42,13.33,1,1,0,0,0-1.89-.66A8,8,0,1,1,12,4a7.86,7.86,0,0,1,6,2.78L16.34,8.25a1,1,0,0,0-.27,1.11A1,1,0,0,0,17,10h4.5a1,1,0,0,0,1-1V5A1,1,0,0,0,21.91,4.09Z" fill="#464646"/></svg>
-                        Build Date:2021-07-02</h4>
-                    <h4 class="version">
-                        <svg viewBox="0 0 32 32" style="
-                        margin-right: 0.125rem;
-                        height: 1.15rem;
-                        vertical-align: top;
-                        display: inline-block;" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#101820;}</style></defs><title/><g data-name="Layer 4" id="Layer_4"><path class="cls-1" d="M16,31A15,15,0,1,1,31,16,15,15,0,0,1,16,31ZM16,3A13,13,0,1,0,29,16,13,13,0,0,0,16,3Z"/><rect class="cls-1" height="9" width="2" x="15" y="14"/><path class="cls-1" d="M16,12a2,2,0,1,1,2-2A2,2,0,0,1,16,12Zm0-2Z"/></g></svg>
-                        Version:2.2</h4>
-                </div>
-            </div>
-    
-            <div class="box">
-                <div class="device-item">
-                    <img src="assets/img/devices/davinci.png">
-                </div>
-                <!--Content device-->
-                <div class="device-data">
-                    <h3 class="devicename">Redmi K20 (davinci)</h3>
-                    <h4 class="update"><svg viewBox="0 0 24 24" style="
-                        margin-right: 0.125rem;
-                        height: 1.15rem;
-                        vertical-align: top;
-                        display: inline-block;" xmlns="http://www.w3.org/2000/svg"><title/><path d="M21.91,4.09a1,1,0,0,0-1.07.16L19.48,5.46A9.81,9.81,0,0,0,12,2a10,10,0,1,0,9.42,13.33,1,1,0,0,0-1.89-.66A8,8,0,1,1,12,4a7.86,7.86,0,0,1,6,2.78L16.34,8.25a1,1,0,0,0-.27,1.11A1,1,0,0,0,17,10h4.5a1,1,0,0,0,1-1V5A1,1,0,0,0,21.91,4.09Z" fill="#464646"/></svg>
-                        Build Date:2021-22-03</h4>
-                    <h4 class="version">
-                        <svg viewBox="0 0 32 32" style="
-                        margin-right: 0.125rem;
-                        height: 1.15rem;
-                        vertical-align: top;
-                        display: inline-block;" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#101820;}</style></defs><title/><g data-name="Layer 4" id="Layer_4"><path class="cls-1" d="M16,31A15,15,0,1,1,31,16,15,15,0,0,1,16,31ZM16,3A13,13,0,1,0,29,16,13,13,0,0,0,16,3Z"/><rect class="cls-1" height="9" width="2" x="15" y="14"/><path class="cls-1" d="M16,12a2,2,0,1,1,2-2A2,2,0,0,1,16,12Zm0-2Z"/></g></svg>
-                        Version:2.3.5</h4>
-                </div>
-            </div>
-    
-            <div class="box">
-                <div class="device-item">
-                    <img src="assets/img/devices/santoni.png">
-                </div>
-                <!--Content device-->
-                <div class="device-data">
-                    <h3 class="devicename">Redmi 4X(santoni)</h3>
-                    <h4 class="update"><svg viewBox="0 0 24 24" style="
-                        margin-right: 0.125rem;
-                        height: 1.15rem;
-                        vertical-align: top;
-                        display: inline-block;" xmlns="http://www.w3.org/2000/svg"><title/><path d="M21.91,4.09a1,1,0,0,0-1.07.16L19.48,5.46A9.81,9.81,0,0,0,12,2a10,10,0,1,0,9.42,13.33,1,1,0,0,0-1.89-.66A8,8,0,1,1,12,4a7.86,7.86,0,0,1,6,2.78L16.34,8.25a1,1,0,0,0-.27,1.11A1,1,0,0,0,17,10h4.5a1,1,0,0,0,1-1V5A1,1,0,0,0,21.91,4.09Z" fill="#464646"/></svg>
-                        Build Date:2020-16-10</h4>
-                    <h4 class="version">
-                        <svg viewBox="0 0 32 32" style="
-                        margin-right: 0.125rem;
-                        height: 1.15rem;
-                        vertical-align: top;
-                        display: inline-block;" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#101820;}</style></defs><title/><g data-name="Layer 4" id="Layer_4"><path class="cls-1" d="M16,31A15,15,0,1,1,31,16,15,15,0,0,1,16,31ZM16,3A13,13,0,1,0,29,16,13,13,0,0,0,16,3Z"/><rect class="cls-1" height="9" width="2" x="15" y="14"/><path class="cls-1" d="M16,12a2,2,0,1,1,2-2A2,2,0,0,1,16,12Zm0-2Z"/></g></svg>
-                        Version:2.0</h4>
-                </div>
-            </div>
-    
-            <div class="box">
-                <div class="device-item">
-                    <img src="assets/img/devices/raphael.png">
-                </div>
-                <!--Content device-->
-                <div class="device-data">
-                    <h3 class="devicename">Redmi K20 Pro(raphael)</h3>
-                    <h4 class="update"><svg viewBox="0 0 24 24" style="
-                        margin-right: 0.125rem;
-                        height: 1.15rem;
-                        vertical-align: top;
-                        display: inline-block;" xmlns="http://www.w3.org/2000/svg"><title/><path d="M21.91,4.09a1,1,0,0,0-1.07.16L19.48,5.46A9.81,9.81,0,0,0,12,2a10,10,0,1,0,9.42,13.33,1,1,0,0,0-1.89-.66A8,8,0,1,1,12,4a7.86,7.86,0,0,1,6,2.78L16.34,8.25a1,1,0,0,0-.27,1.11A1,1,0,0,0,17,10h4.5a1,1,0,0,0,1-1V5A1,1,0,0,0,21.91,4.09Z" fill="#464646"/></svg>
-                        Build Date:2021-19-03</h4>
-                    <h4 class="version">
-                        <svg viewBox="0 0 32 32" style="
-                        margin-right: 0.125rem;
-                        height: 1.15rem;
-                        vertical-align: top;
-                        display: inline-block;" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#101820;}</style></defs><title/><g data-name="Layer 4" id="Layer_4"><path class="cls-1" d="M16,31A15,15,0,1,1,31,16,15,15,0,0,1,16,31ZM16,3A13,13,0,1,0,29,16,13,13,0,0,0,16,3Z"/><rect class="cls-1" height="9" width="2" x="15" y="14"/><path class="cls-1" d="M16,12a2,2,0,1,1,2-2A2,2,0,0,1,16,12Zm0-2Z"/></g></svg>
-                        Version:2.3.5</h4>
-                </div>
-            </div>
-    
-            <div class="box">
-                <div class="device-item">
-                    <img src="assets/img/devices/lmi.jpg">
-                </div>
-                <!--Content device-->
-                <div class="device-data">
-                    <h3 class="devicename">Redmi K30 Pro(lmi)</h3>
-                    <h4 class="update"><svg viewBox="0 0 24 24" style="
-                        margin-right: 0.125rem;
-                        height: 1.15rem;
-                        vertical-align: top;
-                        display: inline-block;" xmlns="http://www.w3.org/2000/svg"><title/><path d="M21.91,4.09a1,1,0,0,0-1.07.16L19.48,5.46A9.81,9.81,0,0,0,12,2a10,10,0,1,0,9.42,13.33,1,1,0,0,0-1.89-.66A8,8,0,1,1,12,4a7.86,7.86,0,0,1,6,2.78L16.34,8.25a1,1,0,0,0-.27,1.11A1,1,0,0,0,17,10h4.5a1,1,0,0,0,1-1V5A1,1,0,0,0,21.91,4.09Z" fill="#464646"/></svg>
-                        Build Date:2021-12-03</h4>
-                    <h4 class="version">
-                        <svg viewBox="0 0 32 32" style="
-                        margin-right: 0.125rem;
-                        height: 1.15rem;
-                        vertical-align: top;
-                        display: inline-block;" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#101820;}</style></defs><title/><g data-name="Layer 4" id="Layer_4"><path class="cls-1" d="M16,31A15,15,0,1,1,31,16,15,15,0,0,1,16,31ZM16,3A13,13,0,1,0,29,16,13,13,0,0,0,16,3Z"/><rect class="cls-1" height="9" width="2" x="15" y="14"/><path class="cls-1" d="M16,12a2,2,0,1,1,2-2A2,2,0,0,1,16,12Zm0-2Z"/></g></svg>
-                        Version:2.3</h4>
-                </div>
-            </div>
-    
-            <div class="box">
-                <div class="device-item">
-                    <img src="assets/img/devices/phoenix.png">
-                </div>
-                <!--Content device-->
-                <div class="device-data">
-                    <h3 class="devicename">Poco X2/Redmi K30(phoenix)
-                    </h3>
-                    <h4 class="update"><svg viewBox="0 0 24 24" style="
-                        margin-right: 0.125rem;
-                        height: 1.15rem;
-                        vertical-align: top;
-                        display: inline-block;" xmlns="http://www.w3.org/2000/svg"><title/><path d="M21.91,4.09a1,1,0,0,0-1.07.16L19.48,5.46A9.81,9.81,0,0,0,12,2a10,10,0,1,0,9.42,13.33,1,1,0,0,0-1.89-.66A8,8,0,1,1,12,4a7.86,7.86,0,0,1,6,2.78L16.34,8.25a1,1,0,0,0-.27,1.11A1,1,0,0,0,17,10h4.5a1,1,0,0,0,1-1V5A1,1,0,0,0,21.91,4.09Z" fill="#464646"/></svg>
-                        Build Date:2021-11-03</h4>
-                    <h4 class="version">
-                        <svg viewBox="0 0 32 32" style="
-                        margin-right: 0.125rem;
-                        height: 1.15rem;
-                        vertical-align: top;
-                        display: inline-block;" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#101820;}</style></defs><title/><g data-name="Layer 4" id="Layer_4"><path class="cls-1" d="M16,31A15,15,0,1,1,31,16,15,15,0,0,1,16,31ZM16,3A13,13,0,1,0,29,16,13,13,0,0,0,16,3Z"/><rect class="cls-1" height="9" width="2" x="15" y="14"/><path class="cls-1" d="M16,12a2,2,0,1,1,2-2A2,2,0,0,1,16,12Zm0-2Z"/></g></svg>
-                        Version:2.3</h4>
-                </div>
-            </div>
-    
-            <div class="box">
-                <div class="device-item">
-                    <img src="assets/img/devices/surya.png">
-                </div>
-                <!--Content device-->
-                <div class="device-data">
-                    <h3 class="devicename">Poco X3(surya)</h3>
-                    <h4 class="update"><svg viewBox="0 0 24 24" style="
-                        margin-right: 0.125rem;
-                        height: 1.15rem;
-                        vertical-align: top;
-                        display: inline-block;" xmlns="http://www.w3.org/2000/svg"><title/><path d="M21.91,4.09a1,1,0,0,0-1.07.16L19.48,5.46A9.81,9.81,0,0,0,12,2a10,10,0,1,0,9.42,13.33,1,1,0,0,0-1.89-.66A8,8,0,1,1,12,4a7.86,7.86,0,0,1,6,2.78L16.34,8.25a1,1,0,0,0-.27,1.11A1,1,0,0,0,17,10h4.5a1,1,0,0,0,1-1V5A1,1,0,0,0,21.91,4.09Z" fill="#464646"/></svg>
-                        Build Date:2021-22-03</h4>
-                    <h4 class="version">
-                        <svg viewBox="0 0 32 32" style="
-                        margin-right: 0.125rem;
-                        height: 1.15rem;
-                        vertical-align: top;
-                        display: inline-block;" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#101820;}</style></defs><title/><g data-name="Layer 4" id="Layer_4"><path class="cls-1" d="M16,31A15,15,0,1,1,31,16,15,15,0,0,1,16,31ZM16,3A13,13,0,1,0,29,16,13,13,0,0,0,16,3Z"/><rect class="cls-1" height="9" width="2" x="15" y="14"/><path class="cls-1" d="M16,12a2,2,0,1,1,2-2A2,2,0,0,1,16,12Zm0-2Z"/></g></svg>
-                        Version:2.3.5</h4>
-                </div>
-            </div>
-    
-            <div class="box">
-                <div class="device-item">
-                    <img src="assets/img/devices/kenzo.jpg">
-                </div>
-                <!--Content device-->
-                <div class="device-data">
-                    <h3 class="devicename">Redmi Note 3 Pro(kenzo)</h3>
-                    <h4 class="update"><svg viewBox="0 0 24 24" style="
-                        margin-right: 0.125rem;
-                        height: 1.15rem;
-                        vertical-align: top;
-                        display: inline-block;" xmlns="http://www.w3.org/2000/svg"><title/><path d="M21.91,4.09a1,1,0,0,0-1.07.16L19.48,5.46A9.81,9.81,0,0,0,12,2a10,10,0,1,0,9.42,13.33,1,1,0,0,0-1.89-.66A8,8,0,1,1,12,4a7.86,7.86,0,0,1,6,2.78L16.34,8.25a1,1,0,0,0-.27,1.11A1,1,0,0,0,17,10h4.5a1,1,0,0,0,1-1V5A1,1,0,0,0,21.91,4.09Z" fill="#464646"/></svg>
-                        Build Date:2029-19-11</h4>
-                    <h4 class="version">
-                        <svg viewBox="0 0 32 32" style="
-                        margin-right: 0.125rem;
-                        height: 1.15rem;
-                        vertical-align: top;
-                        display: inline-block;" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#101820;}</style></defs><title/><g data-name="Layer 4" id="Layer_4"><path class="cls-1" d="M16,31A15,15,0,1,1,31,16,15,15,0,0,1,16,31ZM16,3A13,13,0,1,0,29,16,13,13,0,0,0,16,3Z"/><rect class="cls-1" height="9" width="2" x="15" y="14"/><path class="cls-1" d="M16,12a2,2,0,1,1,2-2A2,2,0,0,1,16,12Zm0-2Z"/></g></svg>
-                        Version:1.7</h4>
-                </div>
-            </div>
-    
-            <div class="box">
-                <div class="device-item">
-                    <img src="assets/img/devices/lavender.png">
-                </div>
-                <!--Content device-->
-                <div class="device-data">
-                    <h3 class="devicename">Redmi Note 4(mido)</h3>
-                    <h4 class="update"><svg viewBox="0 0 24 24" style="
-                        margin-right: 0.125rem;
-                        height: 1.15rem;
-                        vertical-align: top;
-                        display: inline-block;" xmlns="http://www.w3.org/2000/svg"><title/><path d="M21.91,4.09a1,1,0,0,0-1.07.16L19.48,5.46A9.81,9.81,0,0,0,12,2a10,10,0,1,0,9.42,13.33,1,1,0,0,0-1.89-.66A8,8,0,1,1,12,4a7.86,7.86,0,0,1,6,2.78L16.34,8.25a1,1,0,0,0-.27,1.11A1,1,0,0,0,17,10h4.5a1,1,0,0,0,1-1V5A1,1,0,0,0,21.91,4.09Z" fill="#464646"/></svg>
-                        Build Date:2021-19-03</h4>
-                    <h4 class="version">
-                        <svg viewBox="0 0 32 32" style="
-                        margin-right: 0.125rem;
-                        height: 1.15rem;
-                        vertical-align: top;
-                        display: inline-block;" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#101820;}</style></defs><title/><g data-name="Layer 4" id="Layer_4"><path class="cls-1" d="M16,31A15,15,0,1,1,31,16,15,15,0,0,1,16,31ZM16,3A13,13,0,1,0,29,16,13,13,0,0,0,16,3Z"/><rect class="cls-1" height="9" width="2" x="15" y="14"/><path class="cls-1" d="M16,12a2,2,0,1,1,2-2A2,2,0,0,1,16,12Zm0-2Z"/></g></svg>
-                        Version:2.3.5</h4>
-                </div>
-            </div>
-    
-            <div class="box">
-                <div class="device-item">
-                    <img src="assets/img/devices/vince.png">
-                </div>
-                <!--Content device-->
-                <div class="device-data">
-                    <h3 class="devicename">Redmi Note 5(vince)</h3>
-                    <h4 class="update"><svg viewBox="0 0 24 24" style="
-                        margin-right: 0.125rem;
-                        height: 1.15rem;
-                        vertical-align: top;
-                        display: inline-block;" xmlns="http://www.w3.org/2000/svg"><title/><path d="M21.91,4.09a1,1,0,0,0-1.07.16L19.48,5.46A9.81,9.81,0,0,0,12,2a10,10,0,1,0,9.42,13.33,1,1,0,0,0-1.89-.66A8,8,0,1,1,12,4a7.86,7.86,0,0,1,6,2.78L16.34,8.25a1,1,0,0,0-.27,1.11A1,1,0,0,0,17,10h4.5a1,1,0,0,0,1-1V5A1,1,0,0,0,21.91,4.09Z" fill="#464646"/></svg>
-                        Build Date:2021-08-03</h4>
-                    <h4 class="version">
-                        <svg viewBox="0 0 32 32" style="
-                        margin-right: 0.125rem;
-                        height: 1.15rem;
-                        vertical-align: top;
-                        display: inline-block;" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#101820;}</style></defs><title/><g data-name="Layer 4" id="Layer_4"><path class="cls-1" d="M16,31A15,15,0,1,1,31,16,15,15,0,0,1,16,31ZM16,3A13,13,0,1,0,29,16,13,13,0,0,0,16,3Z"/><rect class="cls-1" height="9" width="2" x="15" y="14"/><path class="cls-1" d="M16,12a2,2,0,1,1,2-2A2,2,0,0,1,16,12Zm0-2Z"/></g></svg>
-                        Version:2.3</h4>
-                </div>
-            </div>
-    
-            <div class="box">
-                <div class="device-item">
-                    <img src="assets/img/devices/whyred.png">
-                </div>
-                <!--Content device-->
-                <div class="device-data">
-                    <h3 class="devicename">Redmi Note 5 Pro(whyred)</h3>
-                    <h4 class="update"><svg viewBox="0 0 24 24" style="
-                        margin-right: 0.125rem;
-                        height: 1.15rem;
-                        vertical-align: top;
-                        display: inline-block;" xmlns="http://www.w3.org/2000/svg"><title/><path d="M21.91,4.09a1,1,0,0,0-1.07.16L19.48,5.46A9.81,9.81,0,0,0,12,2a10,10,0,1,0,9.42,13.33,1,1,0,0,0-1.89-.66A8,8,0,1,1,12,4a7.86,7.86,0,0,1,6,2.78L16.34,8.25a1,1,0,0,0-.27,1.11A1,1,0,0,0,17,10h4.5a1,1,0,0,0,1-1V5A1,1,0,0,0,21.91,4.09Z" fill="#464646"/></svg>
-                        Build Date:2021-19-03</h4>
-                    <h4 class="version">
-                        <svg viewBox="0 0 32 32" style="
-                        margin-right: 0.125rem;
-                        height: 1.15rem;
-                        vertical-align: top;
-                        display: inline-block;" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#101820;}</style></defs><title/><g data-name="Layer 4" id="Layer_4"><path class="cls-1" d="M16,31A15,15,0,1,1,31,16,15,15,0,0,1,16,31ZM16,3A13,13,0,1,0,29,16,13,13,0,0,0,16,3Z"/><rect class="cls-1" height="9" width="2" x="15" y="14"/><path class="cls-1" d="M16,12a2,2,0,1,1,2-2A2,2,0,0,1,16,12Zm0-2Z"/></g></svg>
-                        Version:2.3.5</h4>
-                </div>
-            </div>
-    
-            <div class="box">
-                <div class="device-item">
-                    <img src="assets/img/devices/tulip.png">
-                </div>
-                <!--Content device-->
-                <div class="device-data">
-                    <h3 class="devicename">Redmi Note 6 Pro(tulip)</h3>
-                    <h4 class="update"><svg viewBox="0 0 24 24" style="
-                        margin-right: 0.125rem;
-                        height: 1.15rem;
-                        vertical-align: top;
-                        display: inline-block;" xmlns="http://www.w3.org/2000/svg"><title/><path d="M21.91,4.09a1,1,0,0,0-1.07.16L19.48,5.46A9.81,9.81,0,0,0,12,2a10,10,0,1,0,9.42,13.33,1,1,0,0,0-1.89-.66A8,8,0,1,1,12,4a7.86,7.86,0,0,1,6,2.78L16.34,8.25a1,1,0,0,0-.27,1.11A1,1,0,0,0,17,10h4.5a1,1,0,0,0,1-1V5A1,1,0,0,0,21.91,4.09Z" fill="#464646"/></svg>
-                        Build Date:2021-10-03</h4>
-                    <h4 class="version">
-                        <svg viewBox="0 0 32 32" style="
-                        margin-right: 0.125rem;
-                        height: 1.15rem;
-                        vertical-align: top;
-                        display: inline-block;" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#101820;}</style></defs><title/><g data-name="Layer 4" id="Layer_4"><path class="cls-1" d="M16,31A15,15,0,1,1,31,16,15,15,0,0,1,16,31ZM16,3A13,13,0,1,0,29,16,13,13,0,0,0,16,3Z"/><rect class="cls-1" height="9" width="2" x="15" y="14"/><path class="cls-1" d="M16,12a2,2,0,1,1,2-2A2,2,0,0,1,16,12Zm0-2Z"/></g></svg>
-                        Version:2.3.</h4>
-                </div>
-            </div>
-    
-            <div class="box">
-                <div class="device-item">
-                    <img src="assets/img/devices/lavender.png">
-                </div>
-                <!--Content device-->
-                <div class="device-data">
-                    <h3 class="devicename">Redmi Note 7(lavender)</h3>
-                    <h4 class="update"><svg viewBox="0 0 24 24" style="
-                        margin-right: 0.125rem;
-                        height: 1.15rem;
-                        vertical-align: top;
-                        display: inline-block;" xmlns="http://www.w3.org/2000/svg"><title/><path d="M21.91,4.09a1,1,0,0,0-1.07.16L19.48,5.46A9.81,9.81,0,0,0,12,2a10,10,0,1,0,9.42,13.33,1,1,0,0,0-1.89-.66A8,8,0,1,1,12,4a7.86,7.86,0,0,1,6,2.78L16.34,8.25a1,1,0,0,0-.27,1.11A1,1,0,0,0,17,10h4.5a1,1,0,0,0,1-1V5A1,1,0,0,0,21.91,4.09Z" fill="#464646"/></svg>
-                        Build Date:2021-19-03</h4>
-                    <h4 class="version">
-                        <svg viewBox="0 0 32 32" style="
-                        margin-right: 0.125rem;
-                        height: 1.15rem;
-                        vertical-align: top;
-                        display: inline-block;" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#101820;}</style></defs><title/><g data-name="Layer 4" id="Layer_4"><path class="cls-1" d="M16,31A15,15,0,1,1,31,16,15,15,0,0,1,16,31ZM16,3A13,13,0,1,0,29,16,13,13,0,0,0,16,3Z"/><rect class="cls-1" height="9" width="2" x="15" y="14"/><path class="cls-1" d="M16,12a2,2,0,1,1,2-2A2,2,0,0,1,16,12Zm0-2Z"/></g></svg>
-                        Version:2.3.5</h4>
-                </div>
-            </div>
-    
-            <div class="box">
-                <div class="device-item">
-                    <img src="assets/img/devices/violet.png">
-                </div>
-                <!--Content device-->
-                <div class="device-data">
-                    <h3 class="devicename">Redmi Note 7 Pro(violet)</h3>
-                    <h4 class="update"><svg viewBox="0 0 24 24" style="
-                        margin-right: 0.125rem;
-                        height: 1.15rem;
-                        vertical-align: top;
-                        display: inline-block;" xmlns="http://www.w3.org/2000/svg"><title/><path d="M21.91,4.09a1,1,0,0,0-1.07.16L19.48,5.46A9.81,9.81,0,0,0,12,2a10,10,0,1,0,9.42,13.33,1,1,0,0,0-1.89-.66A8,8,0,1,1,12,4a7.86,7.86,0,0,1,6,2.78L16.34,8.25a1,1,0,0,0-.27,1.11A1,1,0,0,0,17,10h4.5a1,1,0,0,0,1-1V5A1,1,0,0,0,21.91,4.09Z" fill="#464646"/></svg>
-                        Build Date:2021-19-03</h4>
-                    <h4 class="version">
-                        <svg viewBox="0 0 32 32" style="
-                        margin-right: 0.125rem;
-                        height: 1.15rem;
-                        vertical-align: top;
-                        display: inline-block;" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#101820;}</style></defs><title/><g data-name="Layer 4" id="Layer_4"><path class="cls-1" d="M16,31A15,15,0,1,1,31,16,15,15,0,0,1,16,31ZM16,3A13,13,0,1,0,29,16,13,13,0,0,0,16,3Z"/><rect class="cls-1" height="9" width="2" x="15" y="14"/><path class="cls-1" d="M16,12a2,2,0,1,1,2-2A2,2,0,0,1,16,12Zm0-2Z"/></g></svg>
-                        Version:2.3.5</h4>
-                </div>
-            </div>
-    
-            <div class="box">
-                <div class="device-item">
-                    <img src="assets/img/devices/ginkgo.png">
-                </div>
-                <!--Content device-->
-                <div class="device-data">
-                    <h3 class="devicename">Redmi Note 8(gingko)</h3>
-                    <h4 class="update"><svg viewBox="0 0 24 24" style="
-                        margin-right: 0.125rem;
-                        height: 1.15rem;
-                        vertical-align: top;
-                        display: inline-block;" xmlns="http://www.w3.org/2000/svg"><title/><path d="M21.91,4.09a1,1,0,0,0-1.07.16L19.48,5.46A9.81,9.81,0,0,0,12,2a10,10,0,1,0,9.42,13.33,1,1,0,0,0-1.89-.66A8,8,0,1,1,12,4a7.86,7.86,0,0,1,6,2.78L16.34,8.25a1,1,0,0,0-.27,1.11A1,1,0,0,0,17,10h4.5a1,1,0,0,0,1-1V5A1,1,0,0,0,21.91,4.09Z" fill="#464646"/></svg>
-                        Build Date:2021-19-03</h4>
-                    <h4 class="version">
-                        <svg viewBox="0 0 32 32" style="
-                        margin-right: 0.125rem;
-                        height: 1.15rem;
-                        vertical-align: top;
-                        display: inline-block;" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#101820;}</style></defs><title/><g data-name="Layer 4" id="Layer_4"><path class="cls-1" d="M16,31A15,15,0,1,1,31,16,15,15,0,0,1,16,31ZM16,3A13,13,0,1,0,29,16,13,13,0,0,0,16,3Z"/><rect class="cls-1" height="9" width="2" x="15" y="14"/><path class="cls-1" d="M16,12a2,2,0,1,1,2-2A2,2,0,0,1,16,12Zm0-2Z"/></g></svg>
-                        Version:2.3</h4>
-                </div>
-            </div>
-    
-            <div class="box">
-                <div class="device-item">
-                    <img src="assets/img/devices/begonia.jpg">
-                </div>
-                <!--Content device-->
-                <div class="device-data">
-                    <h3 class="devicename">Redmi Note 8 Pro(begonia)</h3>
-                    <h4 class="update"><svg viewBox="0 0 24 24" style="
-                        margin-right: 0.125rem;
-                        height: 1.15rem;
-                        vertical-align: top;
-                        display: inline-block;" xmlns="http://www.w3.org/2000/svg"><title/><path d="M21.91,4.09a1,1,0,0,0-1.07.16L19.48,5.46A9.81,9.81,0,0,0,12,2a10,10,0,1,0,9.42,13.33,1,1,0,0,0-1.89-.66A8,8,0,1,1,12,4a7.86,7.86,0,0,1,6,2.78L16.34,8.25a1,1,0,0,0-.27,1.11A1,1,0,0,0,17,10h4.5a1,1,0,0,0,1-1V5A1,1,0,0,0,21.91,4.09Z" fill="#464646"/></svg>
-                        Build Date:2021-19-03</h4>
-                    <h4 class="version">
-                        <svg viewBox="0 0 32 32" style="
-                        margin-right: 0.125rem;
-                        height: 1.15rem;
-                        vertical-align: top;
-                        display: inline-block;" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#101820;}</style></defs><title/><g data-name="Layer 4" id="Layer_4"><path class="cls-1" d="M16,31A15,15,0,1,1,31,16,15,15,0,0,1,16,31ZM16,3A13,13,0,1,0,29,16,13,13,0,0,0,16,3Z"/><rect class="cls-1" height="9" width="2" x="15" y="14"/><path class="cls-1" d="M16,12a2,2,0,1,1,2-2A2,2,0,0,1,16,12Zm0-2Z"/></g></svg>
-                        Version:2.3.5</h4>
-                </div>
-            </div>
-    
-            <div class="box">
-                <div class="device-item">
-                    <img src="assets/img/devices/miatoll.jpg">
-                </div>
-                <!--Content device-->
-                <div class="device-data">
-                    <h3 class="devicename">Redmi Note 9S/9 Pro/Pro Max/POCO M2 Pro(miatoll)</h3>
-                    <h4 class="update"><svg viewBox="0 0 24 24" style="
-                        margin-right: 0.125rem;
-                        height: 1.15rem;
-                        vertical-align: top;
-                        display: inline-block;" xmlns="http://www.w3.org/2000/svg"><title/><path d="M21.91,4.09a1,1,0,0,0-1.07.16L19.48,5.46A9.81,9.81,0,0,0,12,2a10,10,0,1,0,9.42,13.33,1,1,0,0,0-1.89-.66A8,8,0,1,1,12,4a7.86,7.86,0,0,1,6,2.78L16.34,8.25a1,1,0,0,0-.27,1.11A1,1,0,0,0,17,10h4.5a1,1,0,0,0,1-1V5A1,1,0,0,0,21.91,4.09Z" fill="#464646"/></svg>
-                        Build Date:2021-15-03</h4>
-                    <h4 class="version">
-                        <svg viewBox="0 0 32 32" style="
-                        margin-right: 0.125rem;
-                        height: 1.15rem;
-                        vertical-align: top;
-                        display: inline-block;" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#101820;}</style></defs><title/><g data-name="Layer 4" id="Layer_4"><path class="cls-1" d="M16,31A15,15,0,1,1,31,16,15,15,0,0,1,16,31ZM16,3A13,13,0,1,0,29,16,13,13,0,0,0,16,3Z"/><rect class="cls-1" height="9" width="2" x="15" y="14"/><path class="cls-1" d="M16,12a2,2,0,1,1,2-2A2,2,0,0,1,16,12Zm0-2Z"/></g></svg>
-                        Version:2.3</h4>
-                </div>
-            </div>
-    
-            <div class="box">
-                <div class="device-item">
-                    <img src="assets/img/devices/ysl.png">
-                </div>
-                <!--Content device-->
-                <div class="device-data">
-                    <h3 class="devicename">Redmi Y2/S2(ysl)</h3>
-                    <h4 class="update"><svg viewBox="0 0 24 24" style="
-                        margin-right: 0.125rem;
-                        height: 1.15rem;
-                        vertical-align: top;
-                        display: inline-block;" xmlns="http://www.w3.org/2000/svg"><title/><path d="M21.91,4.09a1,1,0,0,0-1.07.16L19.48,5.46A9.81,9.81,0,0,0,12,2a10,10,0,1,0,9.42,13.33,1,1,0,0,0-1.89-.66A8,8,0,1,1,12,4a7.86,7.86,0,0,1,6,2.78L16.34,8.25a1,1,0,0,0-.27,1.11A1,1,0,0,0,17,10h4.5a1,1,0,0,0,1-1V5A1,1,0,0,0,21.91,4.09Z" fill="#464646"/></svg>
-                        Build Date:2021-21-03</h4>
-                    <h4 class="version">
-                        <svg viewBox="0 0 32 32" style="
-                        margin-right: 0.125rem;
-                        height: 1.15rem;
-                        vertical-align: top;
-                        display: inline-block;" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#101820;}</style></defs><title/><g data-name="Layer 4" id="Layer_4"><path class="cls-1" d="M16,31A15,15,0,1,1,31,16,15,15,0,0,1,16,31ZM16,3A13,13,0,1,0,29,16,13,13,0,0,0,16,3Z"/><rect class="cls-1" height="9" width="2" x="15" y="14"/><path class="cls-1" d="M16,12a2,2,0,1,1,2-2A2,2,0,0,1,16,12Zm0-2Z"/></g></svg>
-                        Version:2.3.5</h4>
-                </div>
-            </div>
-        </div>
+              <!--Lenovo-->
+              <div class="device" data-name="lenovo"><span>
+                <a href="https://www.pling.com/p/1473424/" target="_blank" style="text-decoration: none;">
+                    <div class="box">
+                        <div class="device-item">
+                            <img src="assets/img/devices/jd2019.jpg">
+                        </div>
+                        <!--Content device-->
+                        <div class="device-data">
+                            <h3 class="devicename">Lenovo Z5s (jd2019)</h3>
+                            <h4 class="update"><svg viewBox="0 0 24 24" style="
+                                margin-right: 0.125rem;
+                                height: 1.15rem;
+                                vertical-align: top;
+                                display: inline-block;" xmlns="http://www.w3.org/2000/svg"><title/><path d="M21.91,4.09a1,1,0,0,0-1.07.16L19.48,5.46A9.81,9.81,0,0,0,12,2a10,10,0,1,0,9.42,13.33,1,1,0,0,0-1.89-.66A8,8,0,1,1,12,4a7.86,7.86,0,0,1,6,2.78L16.34,8.25a1,1,0,0,0-.27,1.11A1,1,0,0,0,17,10h4.5a1,1,0,0,0,1-1V5A1,1,0,0,0,21.91,4.09Z" fill="#464646"/></svg>
+                                Build Date:2021-22-03</h4>
+                            <h4 class="version">
+                                <svg viewBox="0 0 32 32" style="
+                                margin-right: 0.125rem;
+                                height: 1.15rem;
+                                vertical-align: top;
+                                display: inline-block;" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#101820;}</style></defs><title/><g data-name="Layer 4" id="Layer_4"><path class="cls-1" d="M16,31A15,15,0,1,1,31,16,15,15,0,0,1,16,31ZM16,3A13,13,0,1,0,29,16,13,13,0,0,0,16,3Z"/><rect class="cls-1" height="9" width="2" x="15" y="14"/><path class="cls-1" d="M16,12a2,2,0,1,1,2-2A2,2,0,0,1,16,12Zm0-2Z"/></g></svg>
+                                Version:2.3.5</h4>
+                        </div>
+                    </div></a>
+              </span></div>
+              <!--Lenovo-->
         
-    </div>
-    </div>
-        </div>
+              <!--OnePlus-->
+              <div class="device" data-name="oneplus"><span>
+                <a href="https://www.pling.com/p/1462391/" target="_blank" style="text-decoration: none;">
+                    <div class="box">
+                        <div class="device-item">
+                            <img src="assets/img/devices/enchilada.jpg">
+                        </div>
+                        <!--Content device-->
+                        <div class="device-data">
+                            <h3 class="devicename">Oneplus 6 (enchilada)</h3>
+                            <h4 class="update"><svg viewBox="0 0 24 24" style="
+                                margin-right: 0.125rem;
+                                height: 1.15rem;
+                                vertical-align: top;
+                                display: inline-block;" xmlns="http://www.w3.org/2000/svg"><title/><path d="M21.91,4.09a1,1,0,0,0-1.07.16L19.48,5.46A9.81,9.81,0,0,0,12,2a10,10,0,1,0,9.42,13.33,1,1,0,0,0-1.89-.66A8,8,0,1,1,12,4a7.86,7.86,0,0,1,6,2.78L16.34,8.25a1,1,0,0,0-.27,1.11A1,1,0,0,0,17,10h4.5a1,1,0,0,0,1-1V5A1,1,0,0,0,21.91,4.09Z" fill="#464646"/></svg>
+                                Build Date:2021-12-03</h4>
+                            <h4 class="version">
+                                <svg viewBox="0 0 32 32" style="
+                                margin-right: 0.125rem;
+                                height: 1.15rem;
+                                vertical-align: top;
+                                display: inline-block;" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#101820;}</style></defs><title/><g data-name="Layer 4" id="Layer_4"><path class="cls-1" d="M16,31A15,15,0,1,1,31,16,15,15,0,0,1,16,31ZM16,3A13,13,0,1,0,29,16,13,13,0,0,0,16,3Z"/><rect class="cls-1" height="9" width="2" x="15" y="14"/><path class="cls-1" d="M16,12a2,2,0,1,1,2-2A2,2,0,0,1,16,12Zm0-2Z"/></g></svg>
+                                Version:2.3.5</h4>
+                        </div>
+                    </div></a>
+              </span></div>
+        
+              <div class="device" data-name="oneplus"><span>
+                <a href="https://www.pling.com/p/1478413/" target="_blank" style="text-decoration: none;">
+                    <div class="box">
+                        <div class="device-item">
+                            <img src="assets/img/devices/fajita.jpg">
+                        </div>
+                        <!--Content device-->
+                        <div class="device-data">
+                            <h3 class="devicename">Oneplus 6T (fajita)</h3>
+                            <h4 class="update"><svg viewBox="0 0 24 24" style="
+                                margin-right: 0.125rem;
+                                height: 1.15rem;
+                                vertical-align: top;
+                                display: inline-block;" xmlns="http://www.w3.org/2000/svg"><title/><path d="M21.91,4.09a1,1,0,0,0-1.07.16L19.48,5.46A9.81,9.81,0,0,0,12,2a10,10,0,1,0,9.42,13.33,1,1,0,0,0-1.89-.66A8,8,0,1,1,12,4a7.86,7.86,0,0,1,6,2.78L16.34,8.25a1,1,0,0,0-.27,1.11A1,1,0,0,0,17,10h4.5a1,1,0,0,0,1-1V5A1,1,0,0,0,21.91,4.09Z" fill="#464646"/></svg>
+                                Build Date:2021-12-03</h4>
+                            <h4 class="version">
+                                <svg viewBox="0 0 32 32" style="
+                                margin-right: 0.125rem;
+                                height: 1.15rem;
+                                vertical-align: top;
+                                display: inline-block;" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#101820;}</style></defs><title/><g data-name="Layer 4" id="Layer_4"><path class="cls-1" d="M16,31A15,15,0,1,1,31,16,15,15,0,0,1,16,31ZM16,3A13,13,0,1,0,29,16,13,13,0,0,0,16,3Z"/><rect class="cls-1" height="9" width="2" x="15" y="14"/><path class="cls-1" d="M16,12a2,2,0,1,1,2-2A2,2,0,0,1,16,12Zm0-2Z"/></g></svg>
+                                Version:2.3.5</h4>
+                        </div>
+                    </div></a>
+              </span></div>
+              <!--Oneplus-->
+        
+              <!--Realme-->
+              <div class="device" data-name="realme"><span>
+                <a href="https://sourceforge.net/projects/cherish-os/files/device/RMX1901/" target="_blank" style="text-decoration: none;">
+                    <div class="box">
+                        <div class="device-item">
+                            <img src="assets/img/devices/RMX1901.jpg">
+                        </div>
+                        <!--Content device-->
+                        <div class="device-data">
+                            <h3 class="devicename">Realme X (RMX1901)</h3>
+                            <h4 class="update"><svg viewBox="0 0 24 24" style="
+                                margin-right: 0.125rem;
+                                height: 1.15rem;
+                                vertical-align: top;
+                                display: inline-block;" xmlns="http://www.w3.org/2000/svg"><title/><path d="M21.91,4.09a1,1,0,0,0-1.07.16L19.48,5.46A9.81,9.81,0,0,0,12,2a10,10,0,1,0,9.42,13.33,1,1,0,0,0-1.89-.66A8,8,0,1,1,12,4a7.86,7.86,0,0,1,6,2.78L16.34,8.25a1,1,0,0,0-.27,1.11A1,1,0,0,0,17,10h4.5a1,1,0,0,0,1-1V5A1,1,0,0,0,21.91,4.09Z" fill="#464646"/></svg>
+                                Build Date:2021-13-01</h4>
+                            <h4 class="version">
+                                <svg viewBox="0 0 32 32" style="
+                                margin-right: 0.125rem;
+                                height: 1.15rem;
+                                vertical-align: top;
+                                display: inline-block;" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#101820;}</style></defs><title/><g data-name="Layer 4" id="Layer_4"><path class="cls-1" d="M16,31A15,15,0,1,1,31,16,15,15,0,0,1,16,31ZM16,3A13,13,0,1,0,29,16,13,13,0,0,0,16,3Z"/><rect class="cls-1" height="9" width="2" x="15" y="14"/><path class="cls-1" d="M16,12a2,2,0,1,1,2-2A2,2,0,0,1,16,12Zm0-2Z"/></g></svg>
+                                Version:2.1.5</h4>
+                        </div>
+                    </div></a>
+              </span></div>
+              <!--Realme-->
+        
+              <!--Xiaomi-->
+              <!--Mi Series-->
+              <div class="device" data-name="xiaomi"><span>
+                <a href="https://www.pling.com/p/1489343/" target="_blank" style="text-decoration: none;">
+                    <div class="box">
+                        <div class="device-item">
+                            <img src="assets/img/devices/dipper.jpg">
+                        </div>
+                        <!--Content device-->
+                        <div class="device-data">
+                            <h3 class="devicename">Mi 8(dipper)</h3>
+                            <h4 class="update"><svg viewBox="0 0 24 24" style="
+                                margin-right: 0.125rem;
+                                height: 1.15rem;
+                                vertical-align: top;
+                                display: inline-block;" xmlns="http://www.w3.org/2000/svg"><title/><path d="M21.91,4.09a1,1,0,0,0-1.07.16L19.48,5.46A9.81,9.81,0,0,0,12,2a10,10,0,1,0,9.42,13.33,1,1,0,0,0-1.89-.66A8,8,0,1,1,12,4a7.86,7.86,0,0,1,6,2.78L16.34,8.25a1,1,0,0,0-.27,1.11A1,1,0,0,0,17,10h4.5a1,1,0,0,0,1-1V5A1,1,0,0,0,21.91,4.09Z" fill="#464646"/></svg>
+                                Build Date:2021-08-03</h4>
+                            <h4 class="version">
+                                <svg viewBox="0 0 32 32" style="
+                                margin-right: 0.125rem;
+                                height: 1.15rem;
+                                vertical-align: top;
+                                display: inline-block;" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#101820;}</style></defs><title/><g data-name="Layer 4" id="Layer_4"><path class="cls-1" d="M16,31A15,15,0,1,1,31,16,15,15,0,0,1,16,31ZM16,3A13,13,0,1,0,29,16,13,13,0,0,0,16,3Z"/><rect class="cls-1" height="9" width="2" x="15" y="14"/><path class="cls-1" d="M16,12a2,2,0,1,1,2-2A2,2,0,0,1,16,12Zm0-2Z"/></g></svg>
+                                Version:2.3</h4>
+                        </div>
+                    </div></a>
+              </span></div>
+        
+              <div class="device" data-name="xiaomi"><span>
+                <a href="https://sourceforge.net/projects/cherish-os/files/device/platina/" target="_blank" style="text-decoration: none;">
+                    <div class="box">
+                        <div class="device-item">
+                            <img src="assets/img/devices/platina.jpg">
+                        </div>
+                        <!--Content device-->
+                        <div class="device-data">
+                            <h3 class="devicename">Mi 8 Lite(platina)</h3>
+                            <h4 class="update"><svg viewBox="0 0 24 24" style="
+                                margin-right: 0.125rem;
+                                height: 1.15rem;
+                                vertical-align: top;
+                                display: inline-block;" xmlns="http://www.w3.org/2000/svg"><title/><path d="M21.91,4.09a1,1,0,0,0-1.07.16L19.48,5.46A9.81,9.81,0,0,0,12,2a10,10,0,1,0,9.42,13.33,1,1,0,0,0-1.89-.66A8,8,0,1,1,12,4a7.86,7.86,0,0,1,6,2.78L16.34,8.25a1,1,0,0,0-.27,1.11A1,1,0,0,0,17,10h4.5a1,1,0,0,0,1-1V5A1,1,0,0,0,21.91,4.09Z" fill="#464646"/></svg>
+                                Build Date:2021-02-03</h4>
+                            <h4 class="version">
+                                <svg viewBox="0 0 32 32" style="
+                                margin-right: 0.125rem;
+                                height: 1.15rem;
+                                vertical-align: top;
+                                display: inline-block;" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#101820;}</style></defs><title/><g data-name="Layer 4" id="Layer_4"><path class="cls-1" d="M16,31A15,15,0,1,1,31,16,15,15,0,0,1,16,31ZM16,3A13,13,0,1,0,29,16,13,13,0,0,0,16,3Z"/><rect class="cls-1" height="9" width="2" x="15" y="14"/><path class="cls-1" d="M16,12a2,2,0,1,1,2-2A2,2,0,0,1,16,12Zm0-2Z"/></g></svg>
+                                Version:2.2</h4>
+                        </div>
+                    </div></a>
+              </span></div>
+        
+              <div class="device" data-name="xiaomi"><span>
+                <a href="https://www.pling.com/p/1486405//" target="_blank" style="text-decoration: none;">
+                    <div class="box">
+                        <div class="device-item">
+                            <img src="assets/img/devices/laurel_sprout.jpg">
+                        </div>
+                        <!--Content device-->
+                        <div class="device-data">
+                            <h3 class="devicename">Mi A3(laurel_sprout)</h3>
+                            <h4 class="update"><svg viewBox="0 0 24 24" style="
+                                margin-right: 0.125rem;
+                                height: 1.15rem;
+                                vertical-align: top;
+                                display: inline-block;" xmlns="http://www.w3.org/2000/svg"><title/><path d="M21.91,4.09a1,1,0,0,0-1.07.16L19.48,5.46A9.81,9.81,0,0,0,12,2a10,10,0,1,0,9.42,13.33,1,1,0,0,0-1.89-.66A8,8,0,1,1,12,4a7.86,7.86,0,0,1,6,2.78L16.34,8.25a1,1,0,0,0-.27,1.11A1,1,0,0,0,17,10h4.5a1,1,0,0,0,1-1V5A1,1,0,0,0,21.91,4.09Z" fill="#464646"/></svg>
+                                Build Date:2021-07-03</h4>
+                            <h4 class="version">
+                                <svg viewBox="0 0 32 32" style="
+                                margin-right: 0.125rem;
+                                height: 1.15rem;
+                                vertical-align: top;
+                                display: inline-block;" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#101820;}</style></defs><title/><g data-name="Layer 4" id="Layer_4"><path class="cls-1" d="M16,31A15,15,0,1,1,31,16,15,15,0,0,1,16,31ZM16,3A13,13,0,1,0,29,16,13,13,0,0,0,16,3Z"/><rect class="cls-1" height="9" width="2" x="15" y="14"/><path class="cls-1" d="M16,12a2,2,0,1,1,2-2A2,2,0,0,1,16,12Zm0-2Z"/></g></svg>
+                                Version:2.3</h4>
+                        </div>
+                    </div></a>
+              </span></div>
+        
+              <div class="device" data-name="xiaomi"><span>
+                <a href="https://www.pling.com/p/1471351/" target="_blank" style="text-decoration: none;">
+                    <div class="box">
+                        <div class="device-item">
+                            <img src="assets/img/devices/wayne.jpg">
+                        </div>
+                        <!--Content device-->
+                        <div class="device-data">
+                            <h3 class="devicename">Mi 6X(wayne)</h3>
+                            <h4 class="update"><svg viewBox="0 0 24 24" style="
+                                margin-right: 0.125rem;
+                                height: 1.15rem;
+                                vertical-align: top;
+                                display: inline-block;" xmlns="http://www.w3.org/2000/svg"><title/><path d="M21.91,4.09a1,1,0,0,0-1.07.16L19.48,5.46A9.81,9.81,0,0,0,12,2a10,10,0,1,0,9.42,13.33,1,1,0,0,0-1.89-.66A8,8,0,1,1,12,4a7.86,7.86,0,0,1,6,2.78L16.34,8.25a1,1,0,0,0-.27,1.11A1,1,0,0,0,17,10h4.5a1,1,0,0,0,1-1V5A1,1,0,0,0,21.91,4.09Z" fill="#464646"/></svg>
+                                Build Date:2021-07-02</h4>
+                            <h4 class="version">
+                                <svg viewBox="0 0 32 32" style="
+                                margin-right: 0.125rem;
+                                height: 1.15rem;
+                                vertical-align: top;
+                                display: inline-block;" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#101820;}</style></defs><title/><g data-name="Layer 4" id="Layer_4"><path class="cls-1" d="M16,31A15,15,0,1,1,31,16,15,15,0,0,1,16,31ZM16,3A13,13,0,1,0,29,16,13,13,0,0,0,16,3Z"/><rect class="cls-1" height="9" width="2" x="15" y="14"/><path class="cls-1" d="M16,12a2,2,0,1,1,2-2A2,2,0,0,1,16,12Zm0-2Z"/></g></svg>
+                                Version:2.2</h4>
+                        </div>
+                    </div></a>
+              </span></div>
+              <!--Mi Series-->
+        
+              <!--K Series-->
+              <div class="device" data-name="xiaomi"><span>
+                <a href="https://www.pling.com/p/1491682//" target="_blank" style="text-decoration: none;">
+                    <div class="box">
+                        <div class="device-item">
+                            <img src="assets/img/devices/davinci.jpg">
+                        </div>
+                        <!--Content device-->
+                        <div class="device-data">
+                            <h3 class="devicename">Redmi K20 (davinci)</h3>
+                            <h4 class="update"><svg viewBox="0 0 24 24" style="
+                                margin-right: 0.125rem;
+                                height: 1.15rem;
+                                vertical-align: top;
+                                display: inline-block;" xmlns="http://www.w3.org/2000/svg"><title/><path d="M21.91,4.09a1,1,0,0,0-1.07.16L19.48,5.46A9.81,9.81,0,0,0,12,2a10,10,0,1,0,9.42,13.33,1,1,0,0,0-1.89-.66A8,8,0,1,1,12,4a7.86,7.86,0,0,1,6,2.78L16.34,8.25a1,1,0,0,0-.27,1.11A1,1,0,0,0,17,10h4.5a1,1,0,0,0,1-1V5A1,1,0,0,0,21.91,4.09Z" fill="#464646"/></svg>
+                                Build Date:2021-22-03</h4>
+                            <h4 class="version">
+                                <svg viewBox="0 0 32 32" style="
+                                margin-right: 0.125rem;
+                                height: 1.15rem;
+                                vertical-align: top;
+                                display: inline-block;" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#101820;}</style></defs><title/><g data-name="Layer 4" id="Layer_4"><path class="cls-1" d="M16,31A15,15,0,1,1,31,16,15,15,0,0,1,16,31ZM16,3A13,13,0,1,0,29,16,13,13,0,0,0,16,3Z"/><rect class="cls-1" height="9" width="2" x="15" y="14"/><path class="cls-1" d="M16,12a2,2,0,1,1,2-2A2,2,0,0,1,16,12Zm0-2Z"/></g></svg>
+                                Version:2.3.5</h4>
+                        </div>
+                    </div></a>
+              </span></div>
+        
+              <div class="device" data-name="xiaomi"><span>
+                <a href="https://www.pling.com/p/1499685" target="_blank" style="text-decoration: none;">
+                    <div class="box">
+                        <div class="device-item">
+                            <img src="assets/img/devices/davinci.jpg">
+                        </div>
+                        <!--Content device-->
+                        <div class="device-data">
+                            <h3 class="devicename">Redmi K20 Pro(raphael)</h3>
+                            <h4 class="update"><svg viewBox="0 0 24 24" style="
+                                margin-right: 0.125rem;
+                                height: 1.15rem;
+                                vertical-align: top;
+                                display: inline-block;" xmlns="http://www.w3.org/2000/svg"><title/><path d="M21.91,4.09a1,1,0,0,0-1.07.16L19.48,5.46A9.81,9.81,0,0,0,12,2a10,10,0,1,0,9.42,13.33,1,1,0,0,0-1.89-.66A8,8,0,1,1,12,4a7.86,7.86,0,0,1,6,2.78L16.34,8.25a1,1,0,0,0-.27,1.11A1,1,0,0,0,17,10h4.5a1,1,0,0,0,1-1V5A1,1,0,0,0,21.91,4.09Z" fill="#464646"/></svg>
+                                Build Date:2021-19-03</h4>
+                            <h4 class="version">
+                                <svg viewBox="0 0 32 32" style="
+                                margin-right: 0.125rem;
+                                height: 1.15rem;
+                                vertical-align: top;
+                                display: inline-block;" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#101820;}</style></defs><title/><g data-name="Layer 4" id="Layer_4"><path class="cls-1" d="M16,31A15,15,0,1,1,31,16,15,15,0,0,1,16,31ZM16,3A13,13,0,1,0,29,16,13,13,0,0,0,16,3Z"/><rect class="cls-1" height="9" width="2" x="15" y="14"/><path class="cls-1" d="M16,12a2,2,0,1,1,2-2A2,2,0,0,1,16,12Zm0-2Z"/></g></svg>
+                                Version:2.3.5</h4>
+                        </div>
+                    </div></a>
+              </span></div>
+        
+              <div class="device" data-name="xiaomi"><span>
+                <a href="https://www.pling.com/p/1479454/" target="_blank" style="text-decoration: none;">
+                    <div class="box">
+                        <div class="device-item">
+                            <img src="assets/img/devices/phoenix.jpg">
+                        </div>
+                        <!--Content device-->
+                        <div class="device-data">
+                            <h3 class="devicename">Poco X2/Redmi K30(phoenix)
+                            </h3>
+                            <h4 class="update"><svg viewBox="0 0 24 24" style="
+                                margin-right: 0.125rem;
+                                height: 1.15rem;
+                                vertical-align: top;
+                                display: inline-block;" xmlns="http://www.w3.org/2000/svg"><title/><path d="M21.91,4.09a1,1,0,0,0-1.07.16L19.48,5.46A9.81,9.81,0,0,0,12,2a10,10,0,1,0,9.42,13.33,1,1,0,0,0-1.89-.66A8,8,0,1,1,12,4a7.86,7.86,0,0,1,6,2.78L16.34,8.25a1,1,0,0,0-.27,1.11A1,1,0,0,0,17,10h4.5a1,1,0,0,0,1-1V5A1,1,0,0,0,21.91,4.09Z" fill="#464646"/></svg>
+                                Build Date:2021-11-03</h4>
+                            <h4 class="version">
+                                <svg viewBox="0 0 32 32" style="
+                                margin-right: 0.125rem;
+                                height: 1.15rem;
+                                vertical-align: top;
+                                display: inline-block;" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#101820;}</style></defs><title/><g data-name="Layer 4" id="Layer_4"><path class="cls-1" d="M16,31A15,15,0,1,1,31,16,15,15,0,0,1,16,31ZM16,3A13,13,0,1,0,29,16,13,13,0,0,0,16,3Z"/><rect class="cls-1" height="9" width="2" x="15" y="14"/><path class="cls-1" d="M16,12a2,2,0,1,1,2-2A2,2,0,0,1,16,12Zm0-2Z"/></g></svg>
+                                Version:2.3</h4>
+                        </div>
+                    </div></a>
+              </span></div>
+        
+              <div class="device" data-name="xiaomi"><span>
+                <a href="https://sourceforge.net/projects/cherish-os/files/device/lmi/" target="_blank" style="text-decoration: none;">
+                    <div class="box">
+                        <div class="device-item">
+                            <img src="assets/img/devices/lmi.jpg">
+                        </div>
+                        <!--Content device-->
+                        <div class="device-data">
+                            <h3 class="devicename">Redmi K30 Pro(lmi)</h3>
+                            <h4 class="update"><svg viewBox="0 0 24 24" style="
+                                margin-right: 0.125rem;
+                                height: 1.15rem;
+                                vertical-align: top;
+                                display: inline-block;" xmlns="http://www.w3.org/2000/svg"><title/><path d="M21.91,4.09a1,1,0,0,0-1.07.16L19.48,5.46A9.81,9.81,0,0,0,12,2a10,10,0,1,0,9.42,13.33,1,1,0,0,0-1.89-.66A8,8,0,1,1,12,4a7.86,7.86,0,0,1,6,2.78L16.34,8.25a1,1,0,0,0-.27,1.11A1,1,0,0,0,17,10h4.5a1,1,0,0,0,1-1V5A1,1,0,0,0,21.91,4.09Z" fill="#464646"/></svg>
+                                Build Date:2021-12-03</h4>
+                            <h4 class="version">
+                                <svg viewBox="0 0 32 32" style="
+                                margin-right: 0.125rem;
+                                height: 1.15rem;
+                                vertical-align: top;
+                                display: inline-block;" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#101820;}</style></defs><title/><g data-name="Layer 4" id="Layer_4"><path class="cls-1" d="M16,31A15,15,0,1,1,31,16,15,15,0,0,1,16,31ZM16,3A13,13,0,1,0,29,16,13,13,0,0,0,16,3Z"/><rect class="cls-1" height="9" width="2" x="15" y="14"/><path class="cls-1" d="M16,12a2,2,0,1,1,2-2A2,2,0,0,1,16,12Zm0-2Z"/></g></svg>
+                                Version:2.3</h4>
+                        </div>
+                    </div></a>
+              </span></div>
+              <!--K Series-->
+        
+              <!--Poco-->
+              <div class="device" data-name="xiaomi"><span>
+                <a href="https://www.pling.com/p/1490862/" target="_blank" style="text-decoration: none;">
+                    <div class="box">
+                        <div class="device-item">
+                            <img src="assets/img/devices/surya.jpg">
+                        </div>
+                        <!--Content device-->
+                        <div class="device-data">
+                            <h3 class="devicename">Poco X3(surya)</h3>
+                            <h4 class="update"><svg viewBox="0 0 24 24" style="
+                                margin-right: 0.125rem;
+                                height: 1.15rem;
+                                vertical-align: top;
+                                display: inline-block;" xmlns="http://www.w3.org/2000/svg"><title/><path d="M21.91,4.09a1,1,0,0,0-1.07.16L19.48,5.46A9.81,9.81,0,0,0,12,2a10,10,0,1,0,9.42,13.33,1,1,0,0,0-1.89-.66A8,8,0,1,1,12,4a7.86,7.86,0,0,1,6,2.78L16.34,8.25a1,1,0,0,0-.27,1.11A1,1,0,0,0,17,10h4.5a1,1,0,0,0,1-1V5A1,1,0,0,0,21.91,4.09Z" fill="#464646"/></svg>
+                                Build Date:2021-22-03</h4>
+                            <h4 class="version">
+                                <svg viewBox="0 0 32 32" style="
+                                margin-right: 0.125rem;
+                                height: 1.15rem;
+                                vertical-align: top;
+                                display: inline-block;" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#101820;}</style></defs><title/><g data-name="Layer 4" id="Layer_4"><path class="cls-1" d="M16,31A15,15,0,1,1,31,16,15,15,0,0,1,16,31ZM16,3A13,13,0,1,0,29,16,13,13,0,0,0,16,3Z"/><rect class="cls-1" height="9" width="2" x="15" y="14"/><path class="cls-1" d="M16,12a2,2,0,1,1,2-2A2,2,0,0,1,16,12Zm0-2Z"/></g></svg>
+                                Version:2.3.5</h4>
+                        </div>
+                    </div></a>
+              </span></div>
+              <!--Poco-->
+        
+              <!--Redmi Note-->
+              <div class="device" data-name="xiaomi"><span>
+                <a href="https://sourceforge.net/projects/cherish-os/files/device/santoni/" target="_blank" style="text-decoration: none;">
+                    <div class="box">
+                        <div class="device-item">
+                            <img src="assets/img/devices/santoni.jpg">
+                        </div>
+                        <!--Content device-->
+                        <div class="device-data">
+                            <h3 class="devicename">Redmi 4X(santoni)</h3>
+                            <h4 class="update"><svg viewBox="0 0 24 24" style="
+                                margin-right: 0.125rem;
+                                height: 1.15rem;
+                                vertical-align: top;
+                                display: inline-block;" xmlns="http://www.w3.org/2000/svg"><title/><path d="M21.91,4.09a1,1,0,0,0-1.07.16L19.48,5.46A9.81,9.81,0,0,0,12,2a10,10,0,1,0,9.42,13.33,1,1,0,0,0-1.89-.66A8,8,0,1,1,12,4a7.86,7.86,0,0,1,6,2.78L16.34,8.25a1,1,0,0,0-.27,1.11A1,1,0,0,0,17,10h4.5a1,1,0,0,0,1-1V5A1,1,0,0,0,21.91,4.09Z" fill="#464646"/></svg>
+                                Build Date:2020-16-10</h4>
+                            <h4 class="version">
+                                <svg viewBox="0 0 32 32" style="
+                                margin-right: 0.125rem;
+                                height: 1.15rem;
+                                vertical-align: top;
+                                display: inline-block;" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#101820;}</style></defs><title/><g data-name="Layer 4" id="Layer_4"><path class="cls-1" d="M16,31A15,15,0,1,1,31,16,15,15,0,0,1,16,31ZM16,3A13,13,0,1,0,29,16,13,13,0,0,0,16,3Z"/><rect class="cls-1" height="9" width="2" x="15" y="14"/><path class="cls-1" d="M16,12a2,2,0,1,1,2-2A2,2,0,0,1,16,12Zm0-2Z"/></g></svg>
+                                Version:2.0</h4>
+                        </div>
+                    </div></a>
+              </span></div>
+        
+              <div class="device" data-name="xiaomi"><span>
+                <a href="https://sourceforge.net/projects/cherish-os/files/device/kenzo/" target="_blank" style="text-decoration: none;">
+                    <div class="box">
+                        <div class="device-item">
+                            <img src="assets/img/devices/kenzo.jpg">
+                        </div>
+                        <!--Content device-->
+                        <div class="device-data">
+                            <h3 class="devicename">Redmi Note 3 Pro(kenzo)</h3>
+                            <h4 class="update"><svg viewBox="0 0 24 24" style="
+                                margin-right: 0.125rem;
+                                height: 1.15rem;
+                                vertical-align: top;
+                                display: inline-block;" xmlns="http://www.w3.org/2000/svg"><title/><path d="M21.91,4.09a1,1,0,0,0-1.07.16L19.48,5.46A9.81,9.81,0,0,0,12,2a10,10,0,1,0,9.42,13.33,1,1,0,0,0-1.89-.66A8,8,0,1,1,12,4a7.86,7.86,0,0,1,6,2.78L16.34,8.25a1,1,0,0,0-.27,1.11A1,1,0,0,0,17,10h4.5a1,1,0,0,0,1-1V5A1,1,0,0,0,21.91,4.09Z" fill="#464646"/></svg>
+                                Build Date:2029-19-11</h4>
+                            <h4 class="version">
+                                <svg viewBox="0 0 32 32" style="
+                                margin-right: 0.125rem;
+                                height: 1.15rem;
+                                vertical-align: top;
+                                display: inline-block;" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#101820;}</style></defs><title/><g data-name="Layer 4" id="Layer_4"><path class="cls-1" d="M16,31A15,15,0,1,1,31,16,15,15,0,0,1,16,31ZM16,3A13,13,0,1,0,29,16,13,13,0,0,0,16,3Z"/><rect class="cls-1" height="9" width="2" x="15" y="14"/><path class="cls-1" d="M16,12a2,2,0,1,1,2-2A2,2,0,0,1,16,12Zm0-2Z"/></g></svg>
+                                Version:1.7</h4>
+                        </div>
+                    </div></a>
+              </span></div>
+        
+              <div class="device" data-name="xiaomi"><span>
+                <a href="https://www.pling.com/p/1451939//" target="_blank" style="text-decoration: none;">
+                    <div class="box">
+                        <div class="device-item">
+                            <img src="assets/img/devices/mido.jpg">
+                        </div>
+                        <!--Content device-->
+                        <div class="device-data">
+                            <h3 class="devicename">Redmi Note 4(mido)</h3>
+                            <h4 class="update"><svg viewBox="0 0 24 24" style="
+                                margin-right: 0.125rem;
+                                height: 1.15rem;
+                                vertical-align: top;
+                                display: inline-block;" xmlns="http://www.w3.org/2000/svg"><title/><path d="M21.91,4.09a1,1,0,0,0-1.07.16L19.48,5.46A9.81,9.81,0,0,0,12,2a10,10,0,1,0,9.42,13.33,1,1,0,0,0-1.89-.66A8,8,0,1,1,12,4a7.86,7.86,0,0,1,6,2.78L16.34,8.25a1,1,0,0,0-.27,1.11A1,1,0,0,0,17,10h4.5a1,1,0,0,0,1-1V5A1,1,0,0,0,21.91,4.09Z" fill="#464646"/></svg>
+                                Build Date:2021-19-03</h4>
+                            <h4 class="version">
+                                <svg viewBox="0 0 32 32" style="
+                                margin-right: 0.125rem;
+                                height: 1.15rem;
+                                vertical-align: top;
+                                display: inline-block;" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#101820;}</style></defs><title/><g data-name="Layer 4" id="Layer_4"><path class="cls-1" d="M16,31A15,15,0,1,1,31,16,15,15,0,0,1,16,31ZM16,3A13,13,0,1,0,29,16,13,13,0,0,0,16,3Z"/><rect class="cls-1" height="9" width="2" x="15" y="14"/><path class="cls-1" d="M16,12a2,2,0,1,1,2-2A2,2,0,0,1,16,12Zm0-2Z"/></g></svg>
+                                Version:2.3.5</h4>
+                        </div>
+                    </div></a>
+              </span></div>
+        
+              <div class="device" data-name="xiaomi"><span>
+                <a href="https://sourceforge.net/projects/cherish-os/files/device/vince/" target="_blank" style="text-decoration: none;">
+                    <div class="box">
+                        <div class="device-item">
+                            <img src="assets/img/devices/vince.jpg">
+                        </div>
+                        <!--Content device-->
+                        <div class="device-data">
+                            <h3 class="devicename">Redmi Note 5(vince)</h3>
+                            <h4 class="update"><svg viewBox="0 0 24 24" style="
+                                margin-right: 0.125rem;
+                                height: 1.15rem;
+                                vertical-align: top;
+                                display: inline-block;" xmlns="http://www.w3.org/2000/svg"><title/><path d="M21.91,4.09a1,1,0,0,0-1.07.16L19.48,5.46A9.81,9.81,0,0,0,12,2a10,10,0,1,0,9.42,13.33,1,1,0,0,0-1.89-.66A8,8,0,1,1,12,4a7.86,7.86,0,0,1,6,2.78L16.34,8.25a1,1,0,0,0-.27,1.11A1,1,0,0,0,17,10h4.5a1,1,0,0,0,1-1V5A1,1,0,0,0,21.91,4.09Z" fill="#464646"/></svg>
+                                Build Date:2021-08-03</h4>
+                            <h4 class="version">
+                                <svg viewBox="0 0 32 32" style="
+                                margin-right: 0.125rem;
+                                height: 1.15rem;
+                                vertical-align: top;
+                                display: inline-block;" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#101820;}</style></defs><title/><g data-name="Layer 4" id="Layer_4"><path class="cls-1" d="M16,31A15,15,0,1,1,31,16,15,15,0,0,1,16,31ZM16,3A13,13,0,1,0,29,16,13,13,0,0,0,16,3Z"/><rect class="cls-1" height="9" width="2" x="15" y="14"/><path class="cls-1" d="M16,12a2,2,0,1,1,2-2A2,2,0,0,1,16,12Zm0-2Z"/></g></svg>
+                                Version:2.3</h4>
+                        </div>
+                    </div></a>
+              </span></div>
+        
+              <div class="device" data-name="xiaomi"><span>
+                <a href="https://www.pling.com/p/1454683/" target="_blank" style="text-decoration: none;">
+                    <div class="box">
+                        <div class="device-item">
+                            <img src="assets/img/devices/whyred.jpg">
+                        </div>
+                        <!--Content device-->
+                        <div class="device-data">
+                            <h3 class="devicename">Redmi Note 5 Pro(whyred)</h3>
+                            <h4 class="update"><svg viewBox="0 0 24 24" style="
+                                margin-right: 0.125rem;
+                                height: 1.15rem;
+                                vertical-align: top;
+                                display: inline-block;" xmlns="http://www.w3.org/2000/svg"><title/><path d="M21.91,4.09a1,1,0,0,0-1.07.16L19.48,5.46A9.81,9.81,0,0,0,12,2a10,10,0,1,0,9.42,13.33,1,1,0,0,0-1.89-.66A8,8,0,1,1,12,4a7.86,7.86,0,0,1,6,2.78L16.34,8.25a1,1,0,0,0-.27,1.11A1,1,0,0,0,17,10h4.5a1,1,0,0,0,1-1V5A1,1,0,0,0,21.91,4.09Z" fill="#464646"/></svg>
+                                Build Date:2021-19-03</h4>
+                            <h4 class="version">
+                                <svg viewBox="0 0 32 32" style="
+                                margin-right: 0.125rem;
+                                height: 1.15rem;
+                                vertical-align: top;
+                                display: inline-block;" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#101820;}</style></defs><title/><g data-name="Layer 4" id="Layer_4"><path class="cls-1" d="M16,31A15,15,0,1,1,31,16,15,15,0,0,1,16,31ZM16,3A13,13,0,1,0,29,16,13,13,0,0,0,16,3Z"/><rect class="cls-1" height="9" width="2" x="15" y="14"/><path class="cls-1" d="M16,12a2,2,0,1,1,2-2A2,2,0,0,1,16,12Zm0-2Z"/></g></svg>
+                                Version:2.3.5</h4>
+                        </div>
+                    </div></a>
+              </span></div>
+        
+              <div class="device" data-name="xiaomi"><span>
+                <a href="https://sourceforge.net/projects/cherish-os/files/device/tulip/" target="_blank" style="text-decoration: none;">
+                    <div class="box">
+                        <div class="device-item">
+                            <img src="assets/img/devices/tulip.jpg">
+                        </div>
+                        <!--Content device-->
+                        <div class="device-data">
+                            <h3 class="devicename">Redmi Note 6 Pro(tulip)</h3>
+                            <h4 class="update"><svg viewBox="0 0 24 24" style="
+                                margin-right: 0.125rem;
+                                height: 1.15rem;
+                                vertical-align: top;
+                                display: inline-block;" xmlns="http://www.w3.org/2000/svg"><title/><path d="M21.91,4.09a1,1,0,0,0-1.07.16L19.48,5.46A9.81,9.81,0,0,0,12,2a10,10,0,1,0,9.42,13.33,1,1,0,0,0-1.89-.66A8,8,0,1,1,12,4a7.86,7.86,0,0,1,6,2.78L16.34,8.25a1,1,0,0,0-.27,1.11A1,1,0,0,0,17,10h4.5a1,1,0,0,0,1-1V5A1,1,0,0,0,21.91,4.09Z" fill="#464646"/></svg>
+                                Build Date:2021-07-03</h4>
+                            <h4 class="version">
+                                <svg viewBox="0 0 32 32" style="
+                                margin-right: 0.125rem;
+                                height: 1.15rem;
+                                vertical-align: top;
+                                display: inline-block;" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#101820;}</style></defs><title/><g data-name="Layer 4" id="Layer_4"><path class="cls-1" d="M16,31A15,15,0,1,1,31,16,15,15,0,0,1,16,31ZM16,3A13,13,0,1,0,29,16,13,13,0,0,0,16,3Z"/><rect class="cls-1" height="9" width="2" x="15" y="14"/><path class="cls-1" d="M16,12a2,2,0,1,1,2-2A2,2,0,0,1,16,12Zm0-2Z"/></g></svg>
+                                Version:2.3.</h4>
+                        </div>
+                    </div></a>
+              </span></div>
+        
+              <div class="device" data-name="xiaomi"><span>
+                <a href="https://www.pling.com/p/1407277//" target="_blank" style="text-decoration: none;">
+                    <div class="box">
+                        <div class="device-item">
+                            <img src="assets/img/devices/lavender.jpg">
+                        </div>
+                        <!--Content device-->
+                        <div class="device-data">
+                            <h3 class="devicename">Redmi Note 7(lavender)</h3>
+                            <h4 class="update"><svg viewBox="0 0 24 24" style="
+                                margin-right: 0.125rem;
+                                height: 1.15rem;
+                                vertical-align: top;
+                                display: inline-block;" xmlns="http://www.w3.org/2000/svg"><title/><path d="M21.91,4.09a1,1,0,0,0-1.07.16L19.48,5.46A9.81,9.81,0,0,0,12,2a10,10,0,1,0,9.42,13.33,1,1,0,0,0-1.89-.66A8,8,0,1,1,12,4a7.86,7.86,0,0,1,6,2.78L16.34,8.25a1,1,0,0,0-.27,1.11A1,1,0,0,0,17,10h4.5a1,1,0,0,0,1-1V5A1,1,0,0,0,21.91,4.09Z" fill="#464646"/></svg>
+                                Build Date:2021-19-03</h4>
+                            <h4 class="version">
+                                <svg viewBox="0 0 32 32" style="
+                                margin-right: 0.125rem;
+                                height: 1.15rem;
+                                vertical-align: top;
+                                display: inline-block;" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#101820;}</style></defs><title/><g data-name="Layer 4" id="Layer_4"><path class="cls-1" d="M16,31A15,15,0,1,1,31,16,15,15,0,0,1,16,31ZM16,3A13,13,0,1,0,29,16,13,13,0,0,0,16,3Z"/><rect class="cls-1" height="9" width="2" x="15" y="14"/><path class="cls-1" d="M16,12a2,2,0,1,1,2-2A2,2,0,0,1,16,12Zm0-2Z"/></g></svg>
+                                Version:2.3.5</h4>
+                        </div>
+                    </div></a>
+              </span></div>
+        
+              <div class="device" data-name="xiaomi"><span>
+                <a href="https://www.pling.com/p/1451938/" target="_blank" style="text-decoration: none;">
+                    <div class="box">
+                        <div class="device-item">
+                            <img src="assets/img/devices/violet.jpg">
+                        </div>
+                        <!--Content device-->
+                        <div class="device-data">
+                            <h3 class="devicename">Redmi Note 7 Pro(violet)</h3>
+                            <h4 class="update"><svg viewBox="0 0 24 24" style="
+                                margin-right: 0.125rem;
+                                height: 1.15rem;
+                                vertical-align: top;
+                                display: inline-block;" xmlns="http://www.w3.org/2000/svg"><title/><path d="M21.91,4.09a1,1,0,0,0-1.07.16L19.48,5.46A9.81,9.81,0,0,0,12,2a10,10,0,1,0,9.42,13.33,1,1,0,0,0-1.89-.66A8,8,0,1,1,12,4a7.86,7.86,0,0,1,6,2.78L16.34,8.25a1,1,0,0,0-.27,1.11A1,1,0,0,0,17,10h4.5a1,1,0,0,0,1-1V5A1,1,0,0,0,21.91,4.09Z" fill="#464646"/></svg>
+                                Build Date:2021-19-03</h4>
+                            <h4 class="version">
+                                <svg viewBox="0 0 32 32" style="
+                                margin-right: 0.125rem;
+                                height: 1.15rem;
+                                vertical-align: top;
+                                display: inline-block;" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#101820;}</style></defs><title/><g data-name="Layer 4" id="Layer_4"><path class="cls-1" d="M16,31A15,15,0,1,1,31,16,15,15,0,0,1,16,31ZM16,3A13,13,0,1,0,29,16,13,13,0,0,0,16,3Z"/><rect class="cls-1" height="9" width="2" x="15" y="14"/><path class="cls-1" d="M16,12a2,2,0,1,1,2-2A2,2,0,0,1,16,12Zm0-2Z"/></g></svg>
+                                Version:2.3.5</h4>
+                        </div>
+                    </div></a>
+              </span></div>
+        
+              <div class="device" data-name="xiaomi"><span>
+                <a href="https://www.pling.com/p/1484774//" target="_blank" style="text-decoration: none;">
+                    <div class="box">
+                        <div class="device-item">
+                            <img src="assets/img/devices/ginkgo.jpg">
+                        </div>
+                        <!--Content device-->
+                        <div class="device-data">
+                            <h3 class="devicename">Redmi Note 8(gingko)</h3>
+                            <h4 class="update"><svg viewBox="0 0 24 24" style="
+                                margin-right: 0.125rem;
+                                height: 1.15rem;
+                                vertical-align: top;
+                                display: inline-block;" xmlns="http://www.w3.org/2000/svg"><title/><path d="M21.91,4.09a1,1,0,0,0-1.07.16L19.48,5.46A9.81,9.81,0,0,0,12,2a10,10,0,1,0,9.42,13.33,1,1,0,0,0-1.89-.66A8,8,0,1,1,12,4a7.86,7.86,0,0,1,6,2.78L16.34,8.25a1,1,0,0,0-.27,1.11A1,1,0,0,0,17,10h4.5a1,1,0,0,0,1-1V5A1,1,0,0,0,21.91,4.09Z" fill="#464646"/></svg>
+                                Build Date:2021-05-03</h4>
+                            <h4 class="version">
+                                <svg viewBox="0 0 32 32" style="
+                                margin-right: 0.125rem;
+                                height: 1.15rem;
+                                vertical-align: top;
+                                display: inline-block;" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#101820;}</style></defs><title/><g data-name="Layer 4" id="Layer_4"><path class="cls-1" d="M16,31A15,15,0,1,1,31,16,15,15,0,0,1,16,31ZM16,3A13,13,0,1,0,29,16,13,13,0,0,0,16,3Z"/><rect class="cls-1" height="9" width="2" x="15" y="14"/><path class="cls-1" d="M16,12a2,2,0,1,1,2-2A2,2,0,0,1,16,12Zm0-2Z"/></g></svg>
+                                Version:2.3</h4>
+                        </div>
+                    </div></a>
+              </span></div>
+        
+              <div class="device" data-name="xiaomi"><span>
+                <a href="https://sourceforge.net/projects/cherish-os/files/device/begonia/" target="_blank" style="text-decoration: none;">
+                    <div class="box">
+                        <div class="device-item">
+                            <img src="assets/img/devices/begonia.jpg">
+                        </div>
+                        <!--Content device-->
+                        <div class="device-data">
+                            <h3 class="devicename">Redmi Note 8 Pro(begonia)</h3>
+                            <h4 class="update"><svg viewBox="0 0 24 24" style="
+                                margin-right: 0.125rem;
+                                height: 1.15rem;
+                                vertical-align: top;
+                                display: inline-block;" xmlns="http://www.w3.org/2000/svg"><title/><path d="M21.91,4.09a1,1,0,0,0-1.07.16L19.48,5.46A9.81,9.81,0,0,0,12,2a10,10,0,1,0,9.42,13.33,1,1,0,0,0-1.89-.66A8,8,0,1,1,12,4a7.86,7.86,0,0,1,6,2.78L16.34,8.25a1,1,0,0,0-.27,1.11A1,1,0,0,0,17,10h4.5a1,1,0,0,0,1-1V5A1,1,0,0,0,21.91,4.09Z" fill="#464646"/></svg>
+                                Build Date:2021-19-03</h4>
+                            <h4 class="version">
+                                <svg viewBox="0 0 32 32" style="
+                                margin-right: 0.125rem;
+                                height: 1.15rem;
+                                vertical-align: top;
+                                display: inline-block;" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#101820;}</style></defs><title/><g data-name="Layer 4" id="Layer_4"><path class="cls-1" d="M16,31A15,15,0,1,1,31,16,15,15,0,0,1,16,31ZM16,3A13,13,0,1,0,29,16,13,13,0,0,0,16,3Z"/><rect class="cls-1" height="9" width="2" x="15" y="14"/><path class="cls-1" d="M16,12a2,2,0,1,1,2-2A2,2,0,0,1,16,12Zm0-2Z"/></g></svg>
+                                Version:2.3.5</h4>
+                        </div>
+                    </div></a>
+              </span></div>
+        
+              <div class="device" data-name="xiaomi"><span>
+                <a href="https://www.pling.com/p/1485418//" target="_blank" style="text-decoration: none;">
+                    <div class="box">
+                        <div class="device-item">
+                            <img src="assets/img/devices/miatoll.jpg">
+                        </div>
+                        <!--Content device-->
+                        <div class="device-data">
+                            <h3 class="devicename">Redmi Note 9S/9 Pro/Pro Max/POCO M2 Pro(miatoll)</h3>
+                            <h4 class="update"><svg viewBox="0 0 24 24" style="
+                                margin-right: 0.125rem;
+                                height: 1.15rem;
+                                vertical-align: top;
+                                display: inline-block;" xmlns="http://www.w3.org/2000/svg"><title/><path d="M21.91,4.09a1,1,0,0,0-1.07.16L19.48,5.46A9.81,9.81,0,0,0,12,2a10,10,0,1,0,9.42,13.33,1,1,0,0,0-1.89-.66A8,8,0,1,1,12,4a7.86,7.86,0,0,1,6,2.78L16.34,8.25a1,1,0,0,0-.27,1.11A1,1,0,0,0,17,10h4.5a1,1,0,0,0,1-1V5A1,1,0,0,0,21.91,4.09Z" fill="#464646"/></svg>
+                                Build Date:2021-15-03</h4>
+                            <h4 class="version">
+                                <svg viewBox="0 0 32 32" style="
+                                margin-right: 0.125rem;
+                                height: 1.15rem;
+                                vertical-align: top;
+                                display: inline-block;" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#101820;}</style></defs><title/><g data-name="Layer 4" id="Layer_4"><path class="cls-1" d="M16,31A15,15,0,1,1,31,16,15,15,0,0,1,16,31ZM16,3A13,13,0,1,0,29,16,13,13,0,0,0,16,3Z"/><rect class="cls-1" height="9" width="2" x="15" y="14"/><path class="cls-1" d="M16,12a2,2,0,1,1,2-2A2,2,0,0,1,16,12Zm0-2Z"/></g></svg>
+                                Version:2.3</h4>
+                        </div>
+                    </div></a>
+              </span></div>
+        
+              <div class="device" data-name="xiaomi"><span>
+                <a href="https://www.pling.com/p/1494808/" target="_blank" style="text-decoration: none;">
+                    <div class="box">
+                        <div class="device-item">
+                            <img src="assets/img/devices/ysl.jpg">
+                        </div>
+                        <!--Content device-->
+                        <div class="device-data">
+                            <h3 class="devicename">Redmi Y2/S2(ysl)</h3>
+                            <h4 class="update"><svg viewBox="0 0 24 24" style="
+                                margin-right: 0.125rem;
+                                height: 1.15rem;
+                                vertical-align: top;
+                                display: inline-block;" xmlns="http://www.w3.org/2000/svg"><title/><path d="M21.91,4.09a1,1,0,0,0-1.07.16L19.48,5.46A9.81,9.81,0,0,0,12,2a10,10,0,1,0,9.42,13.33,1,1,0,0,0-1.89-.66A8,8,0,1,1,12,4a7.86,7.86,0,0,1,6,2.78L16.34,8.25a1,1,0,0,0-.27,1.11A1,1,0,0,0,17,10h4.5a1,1,0,0,0,1-1V5A1,1,0,0,0,21.91,4.09Z" fill="#464646"/></svg>
+                                Build Date:2021-21-03</h4>
+                            <h4 class="version">
+                                <svg viewBox="0 0 32 32" style="
+                                margin-right: 0.125rem;
+                                height: 1.15rem;
+                                vertical-align: top;
+                                display: inline-block;" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#101820;}</style></defs><title/><g data-name="Layer 4" id="Layer_4"><path class="cls-1" d="M16,31A15,15,0,1,1,31,16,15,15,0,0,1,16,31ZM16,3A13,13,0,1,0,29,16,13,13,0,0,0,16,3Z"/><rect class="cls-1" height="9" width="2" x="15" y="14"/><path class="cls-1" d="M16,12a2,2,0,1,1,2-2A2,2,0,0,1,16,12Zm0-2Z"/></g></svg>
+                                Version:2.3.5</h4>
+                        </div>
+                    </div></a>
+              </span></div>
+              <!--Redmi Note -->
+              <!--Xiaomi-->
+            </div>
+          </div>
+          <script src="js/script.js"></script>
 
         <!--Footer-->
     <footer class="footer1">

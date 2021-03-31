@@ -1,183 +1,181 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+::selection{
+  color: #fff;
+  background:#53bff0;
+}
 body{
-    background: #f8faff;
-    font-size: 16px;
-    position: relative;
-    overflow-x:hidden;
-    font-family: 'Poppins', sans-serif;
+  padding: 10px;
+}
+.wrapper{
+  margin: 30px auto;
+  max-width: 1100px;
 }
 
-.row1{
-    padding-top: 20px;
-}
 h2{
-    font-weight:500;
-    font-size:30px;
-    margin: 0 0 20px;
-    text-align: center;
+  font-weight:500;
+  font-size:30px;
+  margin: 0 0 20px;
+  text-align: center;
+}
+.wrapper nav{
+  display: flex;
+  justify-content: center;
 }
 
-.nav{
-    padding: 30px 0px 0px 0px;
-    text-align: center;
+.wrapper .items{
+  display: flex;
+  max-width: 720px;
+  width: 100%;
+  justify-content: space-between;
+}
+.items span{
+  padding: 7px 27px;
+  font-size: 18px;
+  font-weight: 300;
+  cursor: pointer;
+  color: #53bff0;
+  border-radius: 50px;
+  border: 1px solid #53bff0;
+  transition: all 0.3s ease;
+}
+.items span.active,
+.items span:hover{
+  color: #fff;
+  background: #53bff0;
 }
 
-.nav ul{
-    margin: 0;
-    text-align: center;
+.download{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
 }
-
-.nav ul li{
-    list-style: none;
-    padding: 6px;
+.download .device{
+  width: calc(100% / 3);
 }
-
-.nav ul li a{
-    text-decoration: none;
-    color:rgb(68, 61, 61);
+.download .device span{
+  width: 100%;
+  overflow: hidden;
 }
-
-#filter-list{
-    justify-content: space-between;
-    display: inline-block;
-    border:1px solid #dddddddd;
-    border-radius: 30px;
-    padding: 4px;
-    margin: 0 0 60px;
+.download .device img{
+  width: 100%;
+  vertical-align: middle;
+  transition: all 0.3s ease;
 }
-
-#filter-list li{
-    display: inline-block;
-    font-size: 16px;
-    color:#88888888;
-    line-height: 50px;
-    border-radius: 25px;
-    font-weight: 500;
-    text-align: center;
-    padding: 0 20px;
-    min-width: 130px;
-    cursor: pointer;
-    -webkit-transition:all 0.3s ease-in-out;
-    -ms-transition:all 0.3s ease-in-out;
-    -moz-transition:all 0.3s ease-in-out;
-    transition:all 0.3s ease-in-out;
+.download .device:hover img{
+  transform: scale(1.1);
 }
-
-#filter-list li.active,
-#filter-list li:hover{
-    background-color: #53bff0;
-    color:#fff;
+.download .device.hide{
+  display: none;
 }
-
-#filter-list li.active a,
-#filter-list li:hover{
-    background-color: #53bff0;
-    color:#fff;
+.download .device.show{
+  animation: animate 0.4s ease;
 }
-
-
-#downloads .container1{
-    position: relative;
-    display: flex;
-    justify-content: center;
+@keyframes animate {
+  0%{
+    transform: scale(0.5);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+@media (max-width: 1000px) {
+  .download .device{
+    width: calc(100% / 3);
+  }
+}
+@media (max-width: 800px) {
+  .download .device{
+    width: calc(100% / 2);
+  }
+}
+@media (max-width: 700px) {
+  .wrapper nav .items{
+    max-width: 600px;
+  }
+  nav .items span{
+    padding: 7px 15px;
+  }
+}
+@media (max-width: 600px) {
+  .wrapper{
+    margin: 30px auto;
+  }
+  .wrapper nav .items{
     flex-wrap: wrap;
-}
-
-#downloads .container1 .box{
-    position: relative;
-    width: 350px;
-    height: 180px;
-    color:white;
-    display: flex;
     justify-content: center;
-    align-items: center;
-    margin: 20px 30px;
-    transition: 0.5s;
-}
-
-#downloads .container1 .box::before{
-    content: " ";
-    position: absolute;
-    top:0;
-    left:0;
+  }
+  nav .items span{
+    margin: 5px;
+  }
+  .download .device{
     width: 100%;
-    border-radius: 10px;
-    height: 100%;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.box{
+  position: relative;
+  width: 310px;
+  height: 180px;
+  color:white;
+  display: flex;
+  justify-content: center;
+  margin: 20px 30px;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.box::before{
+  content: " ";
+  position: absolute;
+  width: 100%;
+  border-radius: 10px;
+  height: 85%;
+  text-decoration: none;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
 
 }
 
-#downloads .container1 .box:hover{
-    transform: translateY(-10px);
+.device-items{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-#downloads .container1 .box .device-item img{
-    object-fit: contain;
-    flex-basis: 35%;
-    height: 6rem;
-    margin: 0 auto .75rem; 
+.box:hover{
+  transform: translateY(-10px);
 }
 
-#downloads .container1 .box .device-data{
-    flex-basis: 65%;
+.box .device-item img{
+  object-fit: contain;
+  flex-basis: 35%;
+  height: 6rem;
+  /* margin: 0 auto .75rem;  */
+  margin-left: -2px;
 }
 
-#downloads .container1 .box .device-data h3{
-    font-weight: 600;
-    font-size: 1rem;
-    line-height: 1.25;
-    margin-left: 20px;
-    color: black;
+.box .device-data{
+  flex-basis: 121%;
 }
 
-#downloads .container1 .box .device-data h4{
-    color:black;
-    font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25;
-    margin-left: 20px;
+.box .device-data h3{
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.25;
+  margin-left: 5px;
+  color: black;
 }
 
-#asusdev
-{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.box .device-data h4{
+  color:black;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.25;
+  margin-left: 5px;
 }
-
-#asusdev a
-{
-    text-decoration: none;
-}
-
-#lenovodev
-{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-#oneplusdev
-{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-#realmedev
-{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-#xiaomidev
-{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
 
