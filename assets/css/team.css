@@ -28,11 +28,6 @@
     font-weight: bold;
 }
 
-#team section{
-    display: flex;
-    position: relative;
-}
-
 #team .container{
     position: relative;
     z-index: 1;
@@ -109,7 +104,7 @@
 
 #team .container .card .sci{
     position: absolute;
-    bottom: 30px;
+    bottom: 50px;
     display: flex;
 }
 #team .container .card .sci li{
