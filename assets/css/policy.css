@@ -7,7 +7,7 @@
 /* New navbar*/
 
 .head{
-    background: linear-gradient(#5B74DC,#f57d89);
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #84a1e5, #6ea7e5, #59ace2, #34aed8, #03afca, #00aeb8, #20aca3);
 }
 #nav-bar {
     position: -webkit-sticky;
