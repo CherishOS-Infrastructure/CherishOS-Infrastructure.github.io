@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:300, 400, 600, 700, 800, 900|Poppins:300, 400, 500, 600, 700, 800, 900&display=swap");
+
 *{ 
     margin:0;
     padding:0;
@@ -656,11 +658,11 @@ section .swiper-slide .img-box img {
 }
 .row .btn {
     font-weight: 700;
-    text-transform: uppercase;
     border: none;
     border-radius: 300px;
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Open Sans';
 }
+
 
 .row .btn-primary:hover {
     color: #fff;
@@ -670,4 +672,80 @@ section .swiper-slide .img-box img {
 .row .btn:hover {
     color: #ffffff;
     text-decoration: none;
+}
+
+.text-center{
+    animation-delay: 0.2s;
+    opacity: 0;
+    animation: slider_left 1s linear forwards;
+}
+
+.btn-xl{
+    animation-delay: 0.2s;
+    opacity: 0;
+    animation: silder_bottom 1.5s linear forwards;
+}
+/*Animation*/
+@keyframes slider_left{
+
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slider_right{
+
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.main-title{
+    animation-delay: 0.2s;
+    opacity: 0;
+    animation: silder_top 1s linear forwards;
+}
+
+.nav-item,.navbar-brand{
+    animation-delay: 0.2s;
+    opacity: 0;
+    animation: silder_top 0.5s linear forwards;
+}
+@keyframes silder_top{
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.banner-para-1,.banner-para-2{
+    animation-delay: 0.2s;
+    opacity: 0;
+    animation: silder_bottom 1s linear forwards;
+}
+
+
+@keyframes silder_bottom{
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
 }
