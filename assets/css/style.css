@@ -683,7 +683,7 @@ section .swiper-slide .img-box img {
 .btn-xl{
     animation-delay: 0.2s;
     opacity: 0;
-    animation: silder_bottom 1.5s linear forwards;
+    animation: silder_bottom 1.25s linear forwards;
 }
 /*Animation*/
 @keyframes slider_left{
