@@ -8,5 +8,5 @@ Cherish Website
 [Bootstrap](http://getbootstrap.com/) for CSS  
 [jQuery](https://jquery.com/) for JS  
 [Yahoo domain](https://yahoosmallbusiness.com/) for the awesome domain  
-[GitHub Pages](https://www.hetzner.com/) for hosting & SSL certificate :lock:
+[Hetzner](https://www.hetzner.com/) for hosting & SSL certificate :lock:
 [git](https://git-scm.com/) for source control
