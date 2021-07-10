@@ -1,350 +1,338 @@
-<!DOCTYPE html>
-<html>
-    <head>
-     <meta charset="UTF-8">
-     <meta name='viewport' content='width=device-width, initial-scale=1'>
-     <title>CherishOS</title>
-     <link rel="stylesheet" href="./assets/css/style.css">
-     <link rel="icon" href="./assets/img/cherish.svg">
-
-     <!-- Open Sans -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg=="
-        crossorigin="anonymous" />
-
-    <link rel="stylesheet" href="./assets/css/footer.css">
-    <link rel="stylesheet" href="./assets/css/team.css">
+<!DOCTYPE hmtml>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> CherishOS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+    <link rel="icon" href="./assets/img/logo.png">
+    <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="./assets/css/back-to-top.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <div class="blurred-wrapper">
+    <header class="main-header container">
+        <a href="index.html" class="logo">CherishOS</a>
 
-    <!-- Swiper CSS -->
-    <link rel="stylesheet" href="assets/css/swiper.min.css" />
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="assets/css/bootstraps.css">
+	<link rel="stylesheet" href="assets/css/bootstrap-icons/bootstrap-icons.css">
 
-    <!-- Font Awesome  -->
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
-    </head>
-    <body >
-    <!--Header-->
-    <div class="head">
-     <!-- Navbar -->
-    <section id="nav-bar">
-        <header class="top-section">
-            <nav class="navbar navbar-expand-lg">
-                <a class="navbar-brand" href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="49" viewBox="0 0 48 49"
-                    style="
-                            margin-right: 1.125rem;
-                            height: 2.5rem;
-                            vertical-align: top;
-                            display: inline-block;">
-                        <image id="Cherish_top_logo" data-name="Cherish top logo" width="48" height="49" xlink:href="data:img/png;base64,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"/>
-                      </svg>CherishOS</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <i class="fa fa-bars" aria-hidden="true"></i>
-                </button>
+	<!-- Box Icons-->
+	<link rel="stylesheet" href="assets/css/boxicons/css/boxicons.css">
+    <link rel="stylesheet" href="assets/css/boxicons/css/boxicons.min">
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#screenshots">Screenshots</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#features">Features</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="./download.html">Download</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#team">Team</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="https://t.me/CherishOS_Chat">Contact Us</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-    </section>
-    <div id="loader-wrapper">
-        <div id="loader"></div>
-        <div class="loader-section section-left"></div>
-        <div class="loader-section section-right"></div>
-    </div>
+	<!-- Owl Carousel  -->
+	<link rel="stylesheet" href="assets/css/owl.carousel.css">
+	<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
 
-    <!-- Banner  -->
-    <section id="banner">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-md-6 text-center">
-                    <img src="./assets/img/phone.png" alt="CherishOS" class="img-fluid" />
-                </div>
-                <div class="col-sm-12 col-md-6">
-                    <h1 class="main-title">Cherish OS</h1>
-                    <p class="banner-para-1"style="color: white;">CherishOS 2.x is based on AOSP, inspired by Google Pixel</p>
-                    <p class="banner-para-2 mb-5"style="color: white;" >
-                        Has a refined Material Design 2 UI crafted by Hung Phan.
-So many features that you probably won't find in any ROM.
-All you can dream of and all you'll ever need.
-Just flash and enjoy...
-                    </p>
-                    <a class="btn btn-primary btn-xl" href="#screenshots">Getting started!</a>
-                </div>
-            </div>
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="assets/css/animate.css">
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        
+        <ul>
+        <li> <a href="./index.html" class="active">Home</a></li>
+        <li> <a href="#screenshot">Screenshot</a></li>
+        <li> <a href="#team">Team</a></li>
+        <li> <a href="#contact">Contact</a></li>
+        </ul>
+        <div class="social-icons-header">
+            <a href="https://github.com/CherishOS"><i class="fab fa-github"></i></a>
+            <a href="https://t.me/CherishOS"><i class="fab fa-telegram"></i></a>
+            <a href="https://www.paypal.me/hungphan2001"><i class="fab fa-paypal"></i></a>
+        </div>
+        <a href="./blog/blog.html" class="btn sign-up">Our Blog!</a>
+    </header>
+    <section class="hero container">
+        <div class="container-wrapper">
+          <h4 class="title">CherishOS 2.x is based on AOSP, inspired by Google Pixel</h4>
+          <p class="message">Has a refined Material Design 2 UI crafted by Hung Phan. So many features that you probably won't find in any ROM. All you can dream of and all you'll ever need. Just flash and enjoy.</p>
+          <br>
+          <a href="./download.html" class="btn cta">Download</a>
         </div>
     </section>
+</div>
+
+    <!-- ==========================================================================================================
+													 Screenshots
+    ========================================================================================================== -->
+         <br>
+         <br>
+         <div class="fh5co-slider-outer wow fadeIn" data-wow-delay="3.35s">
+             <h1><span class="span-features">Screenshots</span></h1>
+             <br>
+             <section id="screenshot" class="screenshot"></section>
+             <div class="container fh5co-slider-inner">
      
-     <!-- Screenshots -->
-    <section class="scroll-margin" id="screenshots">
-        <div class="swiper-container">
-            <h1 class="section-title text-center" style="font-weight: bold;color: white;font-family: 'Open Sans',sans-serif;padding-bottom: 30px;">Screenshots</h1>
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="img-box">
-                        <img src="./assets/img/screenshots/3.webp" alt="" />
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="img-box">
-                        <img src="./assets/img/screenshots/7.webp" alt="" />
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="img-box">
-                        <img src="./assets/img/screenshots/6.webp" alt="" />
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="img-box">
-                        <img src="./assets/img/screenshots/5.webp" alt="" />
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="img-box">
-                        <img src="./assets/img/screenshots/4.webp" alt="" />
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="img-box">
-                        <img src="./assets/img/screenshots/1.webp" alt="" />
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="img-box">
-                        <img src="./assets/img/screenshots/8.webp" alt="" />
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="img-box">
-                        <img src="./assets/img/screenshots/2.webp" alt="" />
-                    </div>
-                </div>
-            </div>
-            <!-- Add Pagination -->
-            <div class="swiper-pagination"></div>
-        </div>
-    </section>
-    
+                 <div class="owl-carousel owl-theme">
+                     <div class="item"><img src="assets/img/smartphone/smartphone-1.png" alt=""></div>
+                     <div class="item"><img src="assets/img/smartphone/smartphone-2.png" alt=""></div>
+                     <div class="item"><img src="assets/img/smartphone/smartphone-3.png" alt=""></div>
+                     <div class="item"><img src="assets/img/smartphone/smartphone-4.png" alt=""></div>
+                     <div class="item"><img src="assets/img/smartphone/smartphone-5.png" alt=""></div>
+                     <div class="item"><img src="assets/img/smartphone/smartphone-6.png" alt=""></div>
+                     <div class="item"><img src="assets/img/smartphone/smartphone-7.png" alt=""></div>
+                     <div class="item"><img src="assets/img/smartphone/smartphone-8.png" alt=""></div>
+                     <div class="item"><img src="assets/img/smartphone/smartphone-9.png" alt=""></div>
+                 </div>
+             </div>
+         </div>
 
-    <!-- Features -->
-    <div id="features">
-        <div class="heading">
-            <p>Features</p>
-        </div>
-         <div class="container">
-        <div class="box">
+    <!-- ==========================================================================================================
+													 Features
+    ========================================================================================================== -->
+    <div id="featuresz">
+    <div class="section-titlez">
+      <h1 class="second-titlez">FEA<span class="span-features">TURES</span></h1>
+      </div>
+      <div class="containerz">
+        <div class="boxz">
             <span>
             </span>
-            <div class="content">
+            <div class="contentz">
                 <img src="assets/img/android.svg">
                 <h2>Up-to-date</h2>
                 <p>Updates with the latest monthly Security Patch</p>
             </div>
         </div>
 
-        <div class="box">
+        <div class="boxz">
             <span>
             </span>
-            <div class="content">
+            <div class="contentz">
                 <img src="assets/img/settings.svg">
                 <h2>Customizations</h2>
                 <p>Enjoy a custom experience with the features provided</p>
             </div>
         </div>
 
-        <div class="box">
+        <div class="boxz">
             <span>
             </span>
-            <div class="content">
-                <img src="assets/img/speedometer.svg">
+            <div class="contentz">
+                <img src="assets/img/performance.svg">
                 <h2>Stability</h2>
                 <p>Improve with optimal battery and performance</p>
             </div>
         </div>
 
-        <div class="box">
+        <div class="boxz">
             <span>
             </span>
-            <div class="content">
+            <div class="contentz">
                 <img src="assets/img/battery.svg">
                 <h2>Powerful</h2>
                 <p>The good performance to play the game</p>
             </div>
         </div>
 
-        <div class="box">
+        <div class="boxz">
             <span>
             </span>
-            <div class="content">
-                <img src="assets/img/code.svg">
+            <div class="contentz">
+                <img src="assets/img/opensource.svg">
                 <h2>Open Source</h2>
                 <p>Source code of the ROM is available on our GitHub</p>
             </div>
         </div>
 
-        <div class="box">
+        <div class="boxz">
             <span>
             </span>
-            <div class="content">
+            <div class="contentz">
                 <img src="assets/img/support.svg">
                 <h2>Support</h2>
                 <p>Active support for the ROM is provided on Telegram</p>
             </div>
         </div>
     </div>
-    </div>
-    
-    <!--Team-->
-    <div id="team">
-        <div class="text">
-            <p>Team</p>
-        </div>
-            <div class="container">
-                <div class="card">
-                    <div class="content">
-                        <div class="imgBx"><img src="./assets/img/server.png"></div>
-                        <div class="contentBx">
-                            <h3>Khuong Hung<br><span>Server Management</span></h3>
-                        </div>
-                    </div>
-                    <ul class="sci">
-                        <li><a href="https://www.facebook.com/khuonghung1423"><img src="./assets/img/icon/facebook.png"></a></li>
-                        <li><a href="https://t.me/hung2408"><img src="./assets/img/icon/telegram.png"></a></li>
-                        <li><a href="https://www.linkedin.com/in/khuonghung2408/"><img src="./assets/img/icon/LinkedIn.png"></a></li>
+  </div>
+        <!-- ======= End Feature Section ======= -->
 
-                    </ul> 
-                </div>
+    <!-- ======= Team Section ======= -->
+		<section id="team" class="team">
+			<div class="container" data-aos="fade-up">
+	  
+			  <div class="section-title">
+				<h1 class="second-title">OUR <span class="span-features">TEAM</span></h1>
+				<br>
+				<br>
+			  </div>
+	  
+			  <div class="row">
+	  
+				<div class="col-xl-3 col-lg-2 col-md-4" data-aos="fade-up" data-aos-delay="100">
+				  <div class="member">
+					<img src="assets/img/team/phan.jpg" class="img-fluid-1" alt="">
+					<div class="member-info">
+					  <div class="member-info-content">
+						<h4>Hung Phan</h4>
+						<span>Owner/Lead Developer</span>
+					  </div>
+					  <div class="social">
+						<a href=""><i class="bi bi-twitter"></i></a>
+						<a href=""><i class="bi bi-facebook"></i></a>
+						<a href=""><i class="bi bi-instagram"></i></a>
+						<a href=""><i class="bi bi-github"></i></a>
+					  </div>
+					</div>
+				  </div>
+				</div>
+				
+				<div class="col-xl-3 col-lg-2 col-md-4" data-aos="fade-up" data-aos-delay="100">
+					<div class="member">
+					  <img src="assets/img/team/karthik.jpg" class="img-fluid-2" alt="">
+					  <div class="member-info">
+						<div class="member-info-content">
+						  <h4>K A R T  H I K</h4>
+						  <span>Maintainer/Website-Developer</span>
+						</div>
+						<div class="social">
+						  <a href="https://twitter.com/Karthiksp206"><i class="bi bi-twitter"></i></a>
+						  <a href="https://www.facebook.com/karthik.sp.5817"><i class="bi bi-facebook"></i></a>
+						  <a href="https://instagram.com/karthiksmokiez"><i class="bi bi-instagram"></i></a>
+						  <a href="https://github.com/karthik558"><i class="bi bi-github"></i></a>
+						</div>
+					  </div>
+					</div>
+				  </div>
 
-                <div class="card">
-                    <div class="content">
-                        <div class="imgBx"><img src="./assets/img/leader.png"></div>
-                        <div class="contentBx">
-                            <h3>Hung Phan<br><span>Founder Developer & Web Designer</span></h3>
-                        </div>
-                    </div>
-                    <ul class="sci">
-                        <li><a href="#"><img src="./assets/img/icon/facebook.png"></a></li>
-                        <li><a href="https://t.me/hungphan2001"><img src="./assets/img/icon/telegram.png"></a></li>
-                        <li><a href="#"><img src="./assets/img/icon/instagram.png"></a></li>
-                    </ul> 
-                </div>
-    
-                <div class="card">
-                    <div class="content">
-                        <div class="imgBx"><img src="./assets/img/designer.png"></div>
-                        <div class="contentBx">
-                            <h3>K A R T H I K<br><span>Web Designer</span></h3>
-                        </div>
-                    </div>
-                    <ul class="sci">
-                        <li><a href="https://www.facebook.com/karthik.sp.5817"><img src="./assets/img/icon/facebook.png"></a></li>
-                        <li><a href="https://t.me/karthik558"><img src="./assets/img/icon/telegram.png"></a></li>
-                        <li><a href="#"><img src="./assets/img/icon/instagram.png"></a></li>
-                    </ul> 
-                </div>
+				<div class="col-xl-3 col-lg-2 col-md-4" data-aos="fade-up" data-aos-delay="200">
+				  <div class="member">
+					<img src="assets/img/team/khuong.jpg" class="img-fluid-3" alt="">
+					<div class="member-info">
+					  <div class="member-info-content">
+						<h4>Khuong Hung</h4>
+						<span>Server Management</span>
+					  </div>
+					  <div class="social">
+						<a href=""><i class="bi bi-twitter"></i></a>
+						<a href=""><i class="bi bi-facebook"></i></a>
+						<a href=""><i class="bi bi-instagram"></i></a>
+						<a href=""><i class="bi bi-github"></i></a>
+					  </div>
+					</div>
+				  </div>
+				</div>
+	  
+			  </div>
+	  
+			</div>
+		  </section>
+          <!-- End Team Section -->
+    <!-- ==========================================================================================================
+                                               Contact US
+    ========================================================================================================== -->
+            <section id="contact" class="contact">
+            <div class="home-page">
+            <div class="form-div">
+                <h2>Let's <span>Talk</span></h2>
+                <p>This is our Contact Us form , from here you can Contact us or fill out the form and we will get to your promptly, <br> Go Ahead</p>
+            <form action="">
+            <label for="#">Name</label>
+            <input type="text" required>
+            <label for="#">Email Id</label>
+            <input type="text" required>
+            <label for="#">Message</label>
+            <textarea name="textarea" id="" cols="40" rows="5" placeholder="Enter Your text...">
+            </textarea>
+            <input type="submit">
+            </form>
             </div>
-</div>
-</div>
-
-    <!--Footer-->
-    <footer class="footer1">
-        <div class="container">
-            <div class="row">
-                <div class="footer-col">
-                    <h4>Blog</h4>
-                    <ul>
-                    <li><a href="./changelog-v2_5.html">May 2021</a></li>
-                    <li><a href="./changelog-v2_4.html">April Update</a></li>
-                    <li><a href="./changelog-v2_3_5.html">March Update</a></li>
-                    <li><a href="./changelog-v2.2.x.html">Tet 2021</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>get help</h4>
-                    <ul>
-                        <li><a href="https://crowdin.com/project/cherishos">Crowdin</a></li>
-                        <li><a href="https://t.me/CherishOS_chat">Support</a></li>
-                        <li><a href="https://t.me/CherishOS">Channel</a></li>
-                        <li><a href="./policy.html">Privacy Policy</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>follow us</h4>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://t.me/CherishOS"><i class="fab fa-telegram"></i></a>
-                        <a href="https://github.com/CherishOS"><i class="fab fa-github"></i></a>
-                        <a href="https://www.paypal.me/hungphan2001"><i class="fas fa-hand-holding-usd"></i></a>
-                        <p style="margin-top: 20px;">Made with ♥ Hung Phan © 2021 CherishOS.</p>
-                    </div>
-                </div>
+            <div class="address-div">
+            <h3>Get in <span>Touch</span></h3>
+            <ul>
+                <li>
+                    <span><li class="fas fa-map-marker-alt"></li></span>
+                    <span> First Street, 333801, Jhunjhunu , Rajastan, India</span>
+                </li>
+                <li>
+                    <span><li class="fas fa-phone"></li></span>
+                    <span> +91-987-654-4321</span>
+                </li>
+                <li>
+                    <span><li class="fas fa-envelope"></li></span>
+                    <span>ContactUs@gmail.com</span>
+                </li>
+            </ul>
+            <div class="social-linkss">
+            <a href="https://www.paypal.me/hungphan2001"><i class="fab fa-paypal"></i></a>
+            <a href="https://github.com/CherishOS"><i class="fab fa-github-alt"></i></a>
+            <a href="https://t.me/CherishOS"><i class="fab fa-telegram"></i></a>
+            </div>
             </div>
         </div>
-   </footer>
-  
-   <img onclick="topFunction()" id="back-to-top" src="assets/img/arrow.png" style="display: block; width: 50px;">
-  
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"
-   integrity="sha512-/DXTXr6nQodMUiq+IUJYCt2PPOUjrHJ9wFrqpJ3XkgPNOZVfMok7cRw6CSxyCQxXn6ozlESsSh1/sMCTF1rL/g=="
-   crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.3/umd/popper.min.js"
-   integrity="sha512-53CQcu9ciJDlqhK7UD8dZZ+TF2PFGZrOngEYM/8qucuQba+a+BXOIRsp9PoMNJI3ZeLMVNIxIfZLbG/CdHI5PA=="
-   crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"
-   integrity="sha512-M5KW3ztuIICmVIhjSqXe01oV2bpe248gOxqmlcYrEzAvws7Pw3z6BK0iGbrwvdrUQUhi3eXgtxp5I8PDo9YfjQ=="
-   crossorigin="anonymous"></script>
 
-  <script>
-  //Get the button
-  var mybutton = document.getElementById("back-to-top");
-  
-  // When the user scrolls down 20px from the top of the document, show the button
-  window.onscroll = function() {scrollFunction()};
-  
-  function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      mybutton.style.display = "block";
-    } else {
-      mybutton.style.display = "none";
+	<!-- ==========================================================================================================
+                                               FOOTER
+    ========================================================================================================== -->
+
+	<footer class="footer-outer">
+		<div class="container footer-inner">
+
+			<div class="footer-three-grid wow fadeIn animated" data-wow-delay="0.66s">
+				<div class="column-1-3">
+					<h1>CherishOS</h1>
+                    <p> Built with ❤️</p>
+				</div>
+				<div class="column-2-3">
+					<nav class="footer-nav">
+						<ul>
+							<a href="#" onclick="$('#fh5co-hero-wrapper').goTo();return false;"><li>Home</li></a>
+							<a href="#" onclick="$('#fh5co-features').goTo();return false;"><li>Blog</li></a>
+						</ul>
+					</nav>
+				</div>
+				<div class="column-3-3">
+					<div class="social-icons-footer">
+						<a href="https://github.com/CherishOS"><i class="fab fa-github"></i></a>
+						<a href="https://t.me/cherishos"><i class="fab fa-telegram"></i></a>
+						<a href="https://www.paypal.me/hungphan2001"><i class="fab fa-paypal"></i></a>
+					</div>
+				</div>
+			</div>
+			<span class="border-bottom-footer"></span>
+			<p class="copyright">&copy; 2021 CherishOS All rights reserved. Design by <a href="https://karthik558.github.io" target="_blank">K A R T H I K</a>.</p>
+
+		</div>
+	</footer>
+    <img onclick="topFunction()" id="back-to-top" src="assets/img/arrow.png" style="display: block; width: 50px;">
+<!-- main page wrapper -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/owl.carousel.js"></script>
+<script src="assets/js/wow.min.js"></script>
+<script src="assets/js/securitys.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+    setTimeout(function(){
+        $('.loader_bg').fadeToggle();
+    }, 350);
+</script>
+<script>
+    //Get the button
+    var mybutton = document.getElementById("back-to-top");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
     }
-  }
-  
-  // When the user clicks on the button, scroll to the top of the document
-  function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-  }
-  </script>
-
-  <!-- Swiper -->
-  <script src="./js/swiper.min.js"></script>
-  <script src="./js/swiper_init.js"></script>
-    </body>
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+</body>
 </html>
