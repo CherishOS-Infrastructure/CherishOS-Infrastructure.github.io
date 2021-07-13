@@ -1099,3 +1099,44 @@ pointer-events: none;
     background-color: #ffffff;
     color: #FF7B89;
 }
+
+/* ==========================================================================================================
+									                        	Preloader
+   ========================================================================================================== */
+   .loaderx{
+     background: rgb(0, 0, 0);
+     width: 100%;
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+
+   .loaderx div{
+     background: #fff;
+     width: 22px;
+     height: 38px;
+     margin-left: 10px;
+     animation: loaderx 1.2s infinite;
+   }
+
+   @keyframes loaderx{
+     50%{
+       height: 84px;
+     }
+   }
+
+   .loaderx div:nth-child(1){
+     background: #ff006a;
+     animation-delay: -0.40s;
+   }
+
+   .loaderx div:nth-child(2){
+    background: #97003a;
+    animation-delay: -0.20s;
+  }
+
+  .loaderx div:nth-child(3){
+    background: #470027;
+    animation-delay: 0s;
+  }

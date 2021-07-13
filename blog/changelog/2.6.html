@@ -12,6 +12,16 @@
     <link rel="stylesheet" href="../../assets/css/back-to-top.css">
 </head>
 <body>
+
+  <!-- ========================================
+                Preloader
+  ========================================= -->
+  <div class="loaderx">
+    <div></div>
+    <div></div>
+    <div></div>
+    </div>
+    
     <div class="blurred-wrapperrz2">
     <header class="main-header container">
         <a href="../../index.html" class="logo">CherishOS</a>
@@ -133,7 +143,7 @@
 	</footer>
     <img onclick="topFunction()" id="back-to-top" src="../../assets/img/arrow.png" style="display: block; width: 50px;">
 <!-- main page wrapper -->
-<script src="../../assets/js/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
 <script src="../../assets/js/bootstrap.js"></script>
 <script src="../../assets/js/owl.carousel.js"></script>
 <script src="../../assets/js/wow.min.js"></script>
@@ -175,5 +185,10 @@
       document.documentElement.scrollTop = 0;
     }
     </script>
+            <script type="text/javascript">
+                setTimeout(function(){
+                  $('.loaderx').fadeToggle();
+                },1000);
+                </script>
 </body>
 </html>

@@ -9,8 +9,19 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
     <link rel="icon" href="./assets/img/logo.png">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/preloader.css">
 </head>
 <body>
+
+ <!-- ========================================
+                Preloader
+  ========================================= -->
+  <div class="loaderx">
+  <div></div>
+  <div></div>
+  <div></div>
+  </div>
+
     <div class="blurred-wrapper">
     <header class="main-header container">
         <a href="index.html" class="logo">CherishOS</a>
@@ -278,7 +289,8 @@
 					<nav class="footer-nav">
 						<ul>
 							<a href="#" onclick="$('#fh5co-hero-wrapper').goTo();return false;"><li>Home</li></a>
-							<a href="#" onclick="$('#fh5co-features').goTo();return false;"><li>Blog</li></a>
+              <a href="./download.html" onclick="$('#fh5co-hero-wrapper').goTo();return false;"><li>Download</li></a>
+              <a href="./blog/blog.html" onclick="$('#fh5co-hero-wrapper').goTo();return false;"><li>Blog</li></a>
 						</ul>
 					</nav>
 				</div>
@@ -297,17 +309,11 @@
 	</footer>
     <img onclick="topFunction()" id="back-to-top" src="assets/img/arrow.png" style="display: block; width: 40px;">
 <!-- main page wrapper -->
-<script src="assets/js/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
 <script src="assets/js/bootstrap.js"></script>
 <script src="assets/js/owl.carousel.js"></script>
 <script src="assets/js/wow.min.js"></script>
-<script src="assets/js/securitys.js"></script>
 <script src="assets/js/main.js"></script>
-<script>
-    setTimeout(function(){
-        $('.loader_bg').fadeToggle();
-    }, 350);
-</script>
 <script>
     //Get the button
     var mybutton = document.getElementById("back-to-top");
@@ -328,6 +334,11 @@
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
     }
+    </script>
+    <script type="text/javascript">
+    setTimeout(function(){
+      $('.loaderx').fadeToggle();
+    },1000);
     </script>
 </body>
 </html>
