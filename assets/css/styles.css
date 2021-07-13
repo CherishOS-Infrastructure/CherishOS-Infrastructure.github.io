@@ -635,8 +635,13 @@ background-image: linear-gradient(#ff0178, rgb(68, 0, 17));
     padding-bottom: 2%;
     list-style: none;
 }
+.address-div ul a {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: inherit;
+}
 .address-div ul li span{
-    margin: 20px 0 10px 0;
+    margin: 25px 1px 24px ;
 }
 .social-linkss a{
     font-size: 20px;
@@ -835,7 +840,7 @@ background-image: linear-gradient(#ff0178, rgb(68, 0, 17));
 {
     position: relative;
     width: 250px;
-    height: 300px;
+    height: 320px;
     color: rgb(255, 255, 255);
     background: #111;
     display: flex; 
@@ -866,7 +871,7 @@ background-image: linear-gradient(#ff0178, rgb(68, 0, 17));
       left: 0;
       width: 50%;
       height: 100%;
-      background: url("../img/bg-2.jpg") center/cover;
+      background: url("../img/bg-4.jpg") center/cover;
       pointer-events: none;
   }
   .containerr .box .content
@@ -988,7 +993,7 @@ pointer-events: none;
 
 .blurred-wrapperrz{
   height: 100vh;
-  background: url("../img/bg-3.jpg") center/cover;
+  background: url("../img/bg-2.jpg") center/cover;
   background-repeat: no-repeat;
   position: relative;
   border-top-left-radius: 10px;
