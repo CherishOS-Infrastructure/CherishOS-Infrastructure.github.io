@@ -12,6 +12,12 @@
 </head>
 <body>
     
+    <!-- ========================================
+                ScrollBar
+  ========================================= -->
+  <div id="progressbar"></div>
+  <div id="scrollpath"></div>
+
  <!-- ========================================
                 Preloader
   ========================================= -->
@@ -630,5 +636,14 @@
               $('.loaderx').fadeToggle();
             },1000);
             </script>
+
+<script type="text/javascript">
+    let progress = document.getElementById('progressbar');
+    let totalHeight = document.body.scrollHeight - window.innerHeight;
+    window.onscroll = function(){
+      let progressHeight = (window.pageYOffset / totalHeight) * 100;
+      progress.style.height = progressHeight + "%";
+    }
+    </script>
 </body>
 </html>

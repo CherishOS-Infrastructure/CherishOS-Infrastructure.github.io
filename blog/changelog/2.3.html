@@ -14,6 +14,12 @@
 <body>
 
   <!-- ========================================
+                ScrollBar
+  ========================================= -->
+  <div id="progressbar"></div>
+  <div id="scrollpath"></div>
+
+  <!-- ========================================
                 Preloader
   ========================================= -->
   <div class="loaderx">
@@ -108,9 +114,10 @@
 				<div class="column-2-3">
 					<nav class="footer-nav">
 						<ul>
-							<a href="#" onclick="$('#fh5co-hero-wrapper').goTo();return false;"><li>Home</li></a>
-                            <a href="../../download.html"><li>Download</li></a>
-                            <a href="../../index.html#contact"><li>Contact</li></a>
+							<a href="../../index.html" onclick="$('#fh5co-hero-wrapper').goTo();return false;"><li>Home</li></a>
+              <a href="../../download.html" onclick="$('#fh5co-hero-wrapper').goTo();return false;"><li>Download</li></a>
+              <a href="./policy.html" onclick="$('#fh5co-hero-wrapper').goTo();return false;"><li>Privacy Policy</li></a>
+              <a href="../../index.html#contact" onclick="$('#fh5co-hero-wrapper').goTo();return false;"><li>Contact</li></a>
 						</ul>
 					</nav>
 				</div>
@@ -176,5 +183,13 @@
                   $('.loaderx').fadeToggle();
                 },1000);
                 </script>
+<script type="text/javascript">
+  let progress = document.getElementById('progressbar');
+  let totalHeight = document.body.scrollHeight - window.innerHeight;
+  window.onscroll = function(){
+    let progressHeight = (window.pageYOffset / totalHeight) * 100;
+    progress.style.height = progressHeight + "%";
+  }
+  </script>                
 </body>
 </html>

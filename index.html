@@ -9,10 +9,15 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
     <link rel="icon" href="./assets/img/logo.png">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/preloader.css">
 </head>
 <body>
 
+   <!-- ========================================
+                ScrollBar
+  ========================================= -->
+  <div id="progressbar"></div>
+  <div id="scrollpath"></div>
+  
  <!-- ========================================
                 Preloader
   ========================================= -->
@@ -340,6 +345,15 @@
     setTimeout(function(){
       $('.loaderx').fadeToggle();
     },1000);
+    </script>
+    
+    <script type="text/javascript">
+    let progress = document.getElementById('progressbar');
+    let totalHeight = document.body.scrollHeight - window.innerHeight;
+    window.onscroll = function(){
+      let progressHeight = (window.pageYOffset / totalHeight) * 100;
+      progress.style.height = progressHeight + "%";
+    }
     </script>
 </body>
 </html>
