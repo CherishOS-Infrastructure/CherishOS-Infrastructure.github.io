@@ -1083,3 +1083,19 @@ pointer-events: none;
   font-size: 2rem;
   margin-left: 5rem;
 }
+#back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 27px;
+  }
+
+#back-to-top:hover{
+    background-color: #ffffff;
+    color: #FF7B89;
+}
