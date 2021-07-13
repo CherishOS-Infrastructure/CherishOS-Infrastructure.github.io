@@ -1140,3 +1140,45 @@ pointer-events: none;
     background: #470027;
     animation-delay: 0s;
   }
+  /* ==========================================================================================================
+									                        	Privacy Policy
+   ========================================================================================================== */
+   .wapz3{
+     font-size: 5rem;
+     align-items: center;
+     justify-content: center;
+     padding-top: 120px;
+     padding-bottom: 60px;
+     padding-left: 100px;
+   }
+   
+   .wapz4{
+     text-decoration: underline;
+     font-weight: 700;
+    font-size: 2.5rem;
+    padding-top: 20px;
+    padding-left: 100px;
+   }
+
+   .para1{
+     font-size: 1.7rem;
+     padding-top: 25px;
+     padding-left: 100px;
+     padding-bottom: 5px;
+   }
+
+   .para2 {
+     font-size: 1.6rem;
+     padding-top: 10px;
+     padding-left: 140px;
+   }
+
+   .policy{
+     font-weight: 300;
+     color: #fff;
+     font-size: 1.5rem;
+   }
+
+   .policy:hover {
+     color: red;
+   }
