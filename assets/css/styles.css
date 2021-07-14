@@ -255,7 +255,7 @@ header ul li a.active
   .fh5co-slider-outer {
     width: 100%;
     height: auto;
-    padding: 170px;
+    padding: 130px;
   }
   .fh5co-slider-outer h1 {
     color: #ff006a;
@@ -287,8 +287,9 @@ header ul li a.active
     color: #ff006a;
   }
   .fh5co-slider-outer .item img {
+    display: block;
     height: 400px;
-    width: 200px;
+    width: 180px;
     object-fit: contain;
   }
      /* ==========================================================================================================
