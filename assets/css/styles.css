@@ -159,11 +159,71 @@ header ul li a.active
 .title{
     font-size: 2rem;
     margin-bottom: 2rem;
+    -webkit-animation: fadein 4s; 
+       -moz-animation: fadein 4s; 
+        -ms-animation: fadein 4s; 
+         -o-animation: fadein 4s;
+            animation: fadein 4s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 6; }
+}
+
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 6; }
+}
+
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 6; }
+}
+
+@-ms-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 6; }
+}
+
+@-o-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 6; }
 }
 
 .message{
     font-size: 1.4rem;
     margin-bottom: 3rem;
+    -webkit-animation: fadein 7s; 
+       -moz-animation: fadein 7s; 
+        -ms-animation: fadein 7s; 
+         -o-animation: fadein 7s;
+            animation: fadein 7s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 12; }
+}
+
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 12; }
+}
+
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 12; }
+}
+
+@-ms-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 12; }
+}
+
+@-o-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 12; }
 }
 
 .cta{
@@ -779,6 +839,36 @@ background-image: linear-gradient(#ff0178, rgb(68, 0, 17));
   margin-bottom: 10rem;
   margin-left: 25rem;
   margin-right: 25rem;
+  -webkit-animation: fadein 6s;
+       -moz-animation: fadein 6s;
+        -ms-animation: fadein 6s;
+         -o-animation: fadein 6s;
+            animation: fadein 6s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 8; }
+}
+
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 8; }
+}
+
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 8; }
+}
+
+@-ms-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 8; }
+}
+
+@-o-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 8; }
 }
 
 .blurred-wrapperr{
@@ -990,6 +1080,35 @@ pointer-events: none;
   margin-bottom: 10rem;
   margin-left: 25rem;
   margin-right: 25rem;
+  -webkit-animation: fadein 5s;
+       -moz-animation: fadein 5s;
+        -ms-animation: fadein 5s;
+         -o-animation: fadein 5s;
+            animation: fadein 5s;
+}
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 5; }
+}
+
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 6; }
+}
+
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 6; }
+}
+
+@-ms-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 6; }
+}
+
+@-o-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 6; }
 }
 
 .blurred-wrapperrz{
