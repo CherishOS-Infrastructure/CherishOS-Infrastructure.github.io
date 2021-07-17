@@ -1345,3 +1345,37 @@ pointer-events: none;
   background: linear-gradient(to top, #ff004c, #8a002e);
   filter: blur(30px);
 }
+
+/* ==========================================================================================================
+									                        	Responsive-FIX-Footer
+   ========================================================================================================== */
+@media screen and (max-width: 800px) {
+  .container-wrapper .wap{
+    margin-left: 0rem;
+  }
+
+  .footer-outer .container{
+    padding: 0 4.5rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container-wrapper .wap{
+    margin-left: 0rem;
+  }
+
+  .footer-outer .container{
+    padding: 0 2.5rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .container-wrapper .wap{
+    margin-left: 0rem;
+  }
+
+  .footer-outer .container{
+    padding: 0 0.5rem;
+    margin-left: -7px;
+}
+}
